@@ -6,7 +6,7 @@ SECRET_KEY = 'django-insecure-7w_)c3-&$n86xh2lqi)jgi+2uim_(u8i)om57m=lf&v9na60n!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['*']
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -17,5 +17,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+MEDIA_ROOT = 'media'
+MEDIA_URL = '/media/'
+STATIC_ROOT = 'static'
+STATIC_URL = '/static/'
 
 TIME_ZONE = 'EST'

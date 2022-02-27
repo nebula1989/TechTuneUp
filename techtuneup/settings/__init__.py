@@ -1,8 +1,9 @@
 import os
 import json
+from pathlib import Path
 
-CONFIG_FILE = 'techtuneup_config.json'
-
+file_path = Path(__file__).absolute().parent
+CONFIG_FILE = file_path / "config.json"
 try:
     with open(CONFIG_FILE) as config_file:
         config = json.load(config_file)
