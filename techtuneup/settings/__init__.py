@@ -1,7 +1,7 @@
 import os
 import json
 
-CONFIG_FILE = '~/techtuneup_config.json'
+CONFIG_FILE = 'techtuneup_config.json'
 
 try:
     with open(CONFIG_FILE) as config_file:

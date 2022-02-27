@@ -5,6 +5,7 @@
 __pycache__
 db.sqlite3
 media
+techtuneup/settings/techtuneup_config.json
 
 # Backup files # 
 *.bak 
