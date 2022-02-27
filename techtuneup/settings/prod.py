@@ -8,11 +8,13 @@ ALLOWED_HOSTS = ['www.techtuneup.org', 'techtuneup.org']
 
 
 DATABASES = {
-    # POSTGRES SERVER in PythonAnywhere
-    """'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }"""
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'OPTIONS': {
+            'service': 'my_service',
+            'passfile': '.my_pgpass',
+        },
+    }
 }
 
 
