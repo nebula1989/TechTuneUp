@@ -18,9 +18,15 @@ DATABASES = {
     }
 }
 
+
 MEDIA_ROOT = 'media'
 MEDIA_URL = '/media/'
-STATIC_ROOT = 'static'
-STATIC_URL = '/static/'
+
+STATIC_URL = 'static/'
+
+STATICFILES_DIRS = [
+   BASE_DIR / "static"
+]
+
 
 TIME_ZONE = 'EST'
