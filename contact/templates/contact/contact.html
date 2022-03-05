@@ -8,5 +8,7 @@
    {% csrf_token %}
    {{ form }}
    <input type="submit" value="Submit">
+        <button><a href="{% url 'index' %}">Go Back</a></button>
 </form>
 </div>
+

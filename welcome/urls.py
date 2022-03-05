@@ -3,6 +3,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 from . import views
+from contact import views as contact_views
 
 urlpatterns = [
     path('', views.index, name='index'),
