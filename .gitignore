@@ -8,6 +8,7 @@ media
 techtuneup/settings/config.json
 techtuneup/settings/.pg_service.conf
 techtuneup/settings/.my_pgpass
+techtuneup/settings/secrets.py
 
 # Backup files # 
 *.bak 

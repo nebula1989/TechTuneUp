@@ -2,6 +2,7 @@ import os
 import json
 from pathlib import Path
 
+
 file_path = Path(__file__).absolute().parent
 CONFIG_FILE = file_path / "config.json"
 try:
