@@ -32,7 +32,7 @@ body {
 body::before{
   content: "";
   background-image: url("/media/welcome_page/tech_tune_up_temp_logo.png");
-  background-size: auto;
+  background-size: cover;
   position: absolute;
   top: 0;
   right: 0;
@@ -40,6 +40,7 @@ body::before{
   left: 0;
   opacity: 15%;
   z-index: -1;
+  background-repeat: repeat-y;
 }
 
 .cover-container {
@@ -71,4 +72,19 @@ body::before{
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+.lenovo-pic{
+  width: 70%;
+  height: 20%;
+}
+
+.broken-devices-pic{
+  width: 50%;
+  height: 20%;
+}
+
+.code-pic{
+  width: 50%;
+  height: 20%;
 }

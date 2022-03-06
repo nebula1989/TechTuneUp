@@ -3,10 +3,10 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 from . import views
-from contact import views as contact_views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('services', views.services, name='services')
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

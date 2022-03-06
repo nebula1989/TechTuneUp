@@ -106,7 +106,7 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CONTACT_EMAIL = 'ben@techtuneup.org'
+CONTACT_EMAIL = 'contact@techtuneup.org'
 ADMIN_EMAIL = ['ben@techtuneup.org']
 
 
