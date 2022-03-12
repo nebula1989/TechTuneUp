@@ -11,7 +11,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'OPTIONS': {
-            'service': 'my_service',
+            'service': 'techtuneup',
             'passfile': '.my_pgpass',
         },
     }
