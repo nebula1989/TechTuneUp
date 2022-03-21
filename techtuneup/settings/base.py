@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'welcome',
     'contact.apps.ContactConfig',
+    'captcha',
 ]
 
 MIDDLEWARE = [
