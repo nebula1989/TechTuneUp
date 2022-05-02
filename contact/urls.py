@@ -4,7 +4,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
-    path('contact', contact_views.contact_view, name='contact'),
+    path('contact', contact_views.contact_under_construction, name='contact'),
     path('captcha/', include('captcha.urls')),
 ]
 
