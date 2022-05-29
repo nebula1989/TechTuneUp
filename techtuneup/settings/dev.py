@@ -1,6 +1,8 @@
 from .base import *
 
 # SECURITY WARNING: keep the secret key used in production secret!
+from .base import BASE_DIR
+
 SECRET_KEY = 'django-insecure-7w_)c3-&$n86xh2lqi)jgi+2uim_(u8i)om57m=lf&v9na60n!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -25,8 +27,7 @@ MEDIA_URL = '/media/'
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-   BASE_DIR / "static"
+    BASE_DIR / "static",
 ]
-
 
 TIME_ZONE = 'EST'

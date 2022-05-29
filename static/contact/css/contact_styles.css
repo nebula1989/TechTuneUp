@@ -1,8 +1,0 @@
-input[type=text], input[type=email], textarea {
- width: 100%;
- display: inline-block;
-}
-
-#form-container{
- width: 40%;
-}

@@ -8,5 +8,3 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('services', views.services, name='services')
 ]
-
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
