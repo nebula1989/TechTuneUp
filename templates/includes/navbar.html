@@ -1,5 +1,4 @@
 {% load static %}
-
 <!--
     *******************
         NAV MENU
@@ -9,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a href="index.html"><img src="{% static 'img/logo.png' %}" alt="logo" class="logo-menu"></a>
+                <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="logo" class="logo-menu"></a>
             </div>
             <div class="col-md-9 no-padding">
                 <nav class="nav-menu">

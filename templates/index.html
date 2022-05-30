@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block index %}
+{% block content %}
     <!-- 
     *******************
           SLIDER  
@@ -495,11 +495,11 @@
                         <div class="column-support-subtitle">Do you need a support or repair your device?</div>
                     </div>
                     <div class="column-support-button">
-                        <a href="#" class=" btn">Contact Us</a>
+                        <a href="{% url 'contact' %}" class=" btn">Contact Us</a>`
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-{% endblock index %}
+{% endblock %}
