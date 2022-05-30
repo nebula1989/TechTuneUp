@@ -1,0 +1,48 @@
+{% load static %}
+
+<!--
+*******************
+    MAIN HEADER
+*******************
+-->
+<div class="main-header one">
+    <div class="container">
+        <div class="header-info">
+            <div class="row">
+                <div class="col-md-6">
+                    <span>Phone :</span> <a class="phone" href="tel:+0000000000">+ (123) 1300-656-1046</a>
+                    <span>Email :</span> <a class="email" href="mailto:tec@fix.com">tec@fix.com</a>
+                </div>
+                <div class="col-md-6">
+                    <div class="float-right">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                <img src="{% static 'img/en-flag.png' %}" width="18" alt="en"> English<span
+                                    class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href=""><img src="{% static 'img/es-flag.png' %}" width="18" alt="es">
+                                    Español</a></li>
+                                <li><a href=""><img src="{% static 'img/de-flag.png' %}" width="18" alt="de">
+                                    Deutsch</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                USD ($)&nbsp;<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="">EUR (€)</a></li>
+                                <li><a href="">CNY (¥)</a></li>
+                            </ul>
+                        </div>
+                        <a href="cart.html" class="cart"> <i class="fa fa-shopping-cart"></i>0</a>
+                        <a href="contact.html" class="cart">
+                            <div class="btn btn-default question">ASK A QUESTION</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

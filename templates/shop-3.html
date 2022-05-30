@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TechFix</title>
+    <meta name="description" content="">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/delicons.css" rel="stylesheet">
+    <link href="css/open-sans.css" rel="stylesheet">
+    <link href="css/lato.css" rel="stylesheet">
+    <link href="css/idangerous.swiper.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="spinner-area">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+        <div class="spinner-txt">LOADING...</div>
+      </div>
+    </div>
+    <!-- 
+    *******************
+        MAIN HEADER    
+    ******************* 
+    -->
+    <div class="main-header one">
+      <div class="container">
+        <div class="header-info">
+          <div class="row">
+            <div class="col">
+              <span>Phone :</span> <a class="phone" href="tel:+0000000000">+ (123) 1300-656-1046</a>
+              <span>Email :</span> <a class="email" href="mailto:tec@fix.com">tec@fix.com</a>
+            </div>
+            <div class="col">
+              <div class="pull-right">
+                <div class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" role="button">
+                  <img src="img/en-flag.png" width="18" alt="en"> English<span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href=""><img src="img/es-flag.png" width="18" alt="es"> Español</a></li>
+                    <li><a href=""><img src="img/de-flag.png" width="18" alt="de"> Deutsch</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" role="button">
+                  USD ($)&nbsp;<span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="">EUR (€)</a></li>
+                    <li><a href="">CNY (¥)</a></li>
+                  </ul>
+                </div>
+                <a href="cart.html" class="cart"> <i class="fa fa-shopping-cart"></i>0</a>
+                <a href="contact.html" class="cart"> <div class="btn btn-default question">ASK A QUESTION</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    *******************
+          LOGIN   
+    *******************
+    -->
+    <div class="modal" id="mylogin">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form class="login-form">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="wrapper">
+                  <h3 class="title"><i class="fa fa-lock"></i> Log in</h3>
+                  <div class="subtitle">Access myTechFix area</div>
+                  <input type="text" name="username" placeholder="Primary Email" class="field" required>
+                  <input type="password" name="password" placeholder="Password" class="field" required>
+                  <input type="submit" class="btn btn-block btn-primary" value="log in">
+                  <label class="label-form"><input type="checkbox" class="btn-check">Remember me</label>
+                  <a href="" class="link">Forgot my password</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    *******************
+        NAV MENU    
+    *******************
+    -->
+    <div class="menu-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="logo-menu"></a>
+          </div>
+          <div class="col-md-9 no-padding">
+            <nav class="nav-menu">
+              <button class="menu-toggle">
+              <span class="icon"></span>
+              <span class="icon"></span>
+              <span class="icon"></span>
+              </button>
+              <ul class="main-menu">
+                <li class="menu-item active menu-item-has-children">
+                  <a href="#">Home</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="index.html">Homepage v1</a></li>
+                    <li class="menu-item"><a href="homepage-2.html">Homepage v2</a></li>
+                    <li class="menu-item"><a href="homepage-3.html">Homepage v3</a></li>
+                    <li class="menu-item"><a href="homepage-4.html">Homepage v4</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#">Services</a>
+                  <div class="sub-menu menu-large">
+                    <ul class="container">
+                      <li class="service-list">
+                        <div class="row">
+                          <div class="col-sm-3 service">
+                            <div class="media-left">
+                              <i class="fa fa-desktop"></i>
+                            </div>
+                            <div class="media-body">
+                              <a class="menu-item" href="pc-imac-repair.html">PC & iMac Repair</a>
+                              <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 service">
+                            <div class="media-left">
+                              <i class="fa fa-laptop"></i>
+                            </div>
+                            <div class="media-body">
+                              <a class="menu-item" href="laptop-repair.html">Laptop Repair</a>
+                              <p>Adipiscing integer act lacinia</p>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 service">
+                            <div class="media-left">
+                              <i class="fa fa-tablet"></i>
+                            </div>
+                            <div class="media-body">
+                              <a class="menu-item" href="tablet-repair.html">Tablet Repair</a>
+                              <p>Dolor sit amet conse adipiscing</p>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 service">
+                            <div class="media-left">
+                              <i class="fa fa-mobile-phone"></i>
+                            </div>
+                            <div class="media-body">
+                              <a class="menu-item" href="smartphone-repair.html">Smartphone Repair</a>
+                              <p>Dolor sit amet conse adipiscing</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-3 service">
+                            <div class="media-left">
+                              <i class="fa fa-laptop"></i>
+                            </div>
+                            <div class="media-body">
+                              <a class="menu-item" href="macbook-repair.html">Macbook Repair</a>
+                              <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 service">
+                            <div class="media-left">
+                              <i class="fa fa-tablet"></i>
+                            </div>
+                            <div class="media-body">
+                              <a class="menu-item" href="ipad-repair.html">iPad Repair</a>
+                              <p>Adipiscing integer act lacinia</p>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 service">
+                            <div class="media-left">
+                              <i class="fa fa-mobile"></i>
+                            </div>
+                            <div class="media-body">
+                              <a class="menu-item" href="iphone-repair.html">iPhone Repair</a>
+                              <p>Dolor sit amet conse adipiscing.</p>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 service special">
+                            <div class="media-left">
+                              <i class="fa fa-star-o"></i>
+                            </div>
+                            <div class="media-body">
+                              <a class="menu-item" href="all-services-repair.html">All Services</a>
+                              <p>Dolor sit amet conse adipiscing.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#">E-Shop</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="shop.html">e-Shop Products</a></li>
+                    <li class="menu-item"><a href="shop-2.html">e-Shop Sidebar</a></li>
+                    <li class="menu-item"><a href="shop-3.html">e-Shop Product Details</a></li>
+                    <li class="menu-item"><a href="cart.html">Cart</a></li>
+                    <li class="menu-item"><a href="checkout.html">Checkout</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#">Blog</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="blog.html">Blog v1 </a></li>
+                    <li class="menu-item"><a href="blog-2.html">Blog v2</a></li>
+                    <li class="menu-item"><a href="blog-single.html">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#">Pages</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="pricing-tables.html">Pricing Tables</a></li>
+                    <li class="menu-item"><a href="about.html"> About Us</a></li>
+                    <li class="menu-item"><a href="team.html">Our Team</a></li>
+                    <li class="menu-item"><a href="404.html">404</a></li>
+                    <li class="menu-item"><a href="countdown.html">Coming Soon</a></li>
+                    <li class="menu-item"><a href="register.html">Register</a></li>
+                    <li class="menu-item"><a href="faq.html">Faq</a></li>
+                    <li class="menu-item"><a href="#" data-toggle="modal" data-target="#mylogin">Login</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children"><a href="elements.html">Elements</a></li>
+                <li class="menu-item menu-item-has-children menu-last"><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    *******************
+      NAV MENU MOBILE  
+    *******************
+    -->
+    <div class="menu-wrap mobile">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 no-padding">
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="logo-menu"></a>
+          </div>
+          <div class="col-md-9 no-padding">
+            <nav class="nav-menu">
+              <button id="nav-toggle" class="menu-toggle">
+              <span class="icon"></span>
+              <span class="icon"></span>
+              <span class="icon"></span>
+              </button>
+              <ul class="main-menu">
+                <li class="menu-item active menu-item-has-children">
+                  <a>Home</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="index.html">Homepage v1</a></li>
+                    <li class="menu-item"><a href="homepage-2.html">Homepage v2</a></li>
+                    <li class="menu-item"><a href="homepage-3.html">Homepage v3</a></li>
+                    <li class="menu-item"><a href="homepage-4.html">Homepage v4</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a>Services</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="pc-imac-repair.html">PC & iMac Repair</a></li>
+                    <li class="menu-item"><a href="laptop-repair.html">Laptop Repair</a></li>
+                    <li class="menu-item"><a href="tablet-repair.html">Tablet Repair</a></li>
+                    <li class="menu-item"><a href="smartphone-repair.html">Smartphone Repair</a></li>
+                    <li class="menu-item"><a href="macbook-repair.html">Macbook Repair</a></li>
+                    <li class="menu-item"><a href="ipad-repair.html">iPad Repair</a></li>
+                    <li class="menu-item"><a href="iphone-repair.html">iPhone Repair</a></li>
+                    <li class="menu-item"><a href="all-services-repair.html">All Services Repair</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a>E-Shop</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="shop.html">e-Shop Products</a></li>
+                    <li class="menu-item"><a href="shop-2.html">e-Shop Side Bar</a></li>
+                    <li class="menu-item"><a href="shop-3.html">e-Shop Product Details</a></li>
+                    <li class="menu-item"><a href="cart.html">Cart</a></li>
+                    <li class="menu-item"><a href="checkout.html">Checkout</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a>Blog</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="blog.html">Blog v1</a></li>
+                    <li class="menu-item"><a href="blog-2.html">Blog v2</a></li>
+                    <li class="menu-item"><a href="blog-single.html">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a>Pages</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="pricing-tables.html">Pricing Tables</a></li>
+                    <li class="menu-item"><a href="about.html"> About Us</a></li>
+                    <li class="menu-item"><a href="team.html">Our Team</a></li>
+                    <li class="menu-item"><a href="404.html">404</a></li>
+                    <li class="menu-item"><a href="countdown.html">Coming Soon</a></li>
+                    <li class="menu-item"><a href="register.html">Register</a></li>
+                    <li class="menu-item"><a href="faq.html">Faq</a></li>
+                    <li class="menu-item"><a href="#" data-toggle="modal" data-target="#mylogin">Login</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="elements.html">Elements</a></li>
+                <li class="menu-item menu-last"><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    *******************
+        TOP BANNER
+    ******************* 
+    -->
+    <div class="top-header overlay img-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="wrapper">
+              <div class="heading">Our e-Shop</div>
+              <div class="subheding">
+                <a href="index.html" class="link">home</a><small>&#9733;</small>
+                <a href="#" class="link">pages</a><small>&#9733;</small>
+                <a href="shop.html" class="link active">e-Shop Product Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    *******************
+    E-SHOP PRODUCT DETAILS
+    ******************* 
+    -->
+    <section class="section-content">
+      <div class="shopping details">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+              <div class="section-heading">E-Shop - Product Details</div>
+              
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="popup-gallery row">
+                    <a href="img/details01.jpg">
+                      <img src="img/details01.jpg" alt="details01">
+                    </a>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 first">
+                      <a href="img/details02.jpg">
+                        <img src="img/details02.jpg" alt="details02">
+                      </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                      <a href="img/details03.jpg">
+                        <img src="img/details03.jpg" alt="details03">
+                      </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 last">
+                      <a href="img/details01.jpg">
+                        <img src="img/details01.jpg" alt="details01">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="wrappper">
+                    <h5 class="online">apenas online</h5>
+                    <h3 class="title">
+                      Windows Phone
+                    </h3>
+                    <div class="desc">
+                      But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will.
+                    </div>
+                    <h6 class="ref"> Reference <span>Phone 40811/11/10</span></h6>
+                    <h6 class="vat"> Price <span>VAT included</span></h6>
+                    <div class="social">
+                      <div class="btn facebook"><i class="fa fa-facebook"></i> Facebook</div>
+                      <div class="btn twitter"><i class="fa fa-twitter"></i> Twitter</div>
+                      <div class="btn google-plus"><i class="fa fa-google-plus"></i> Google Plus</div>
+                    </div>
+                    <hr>
+                    <div class="price">
+                      <div class="value"><a href=""><del>$577.00</del> <br><span>$426.00</span></a></div>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="quantity">
+                          <input type="number" min="1" max="19" value="1">
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="btn btn-default"> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="shop-tabs">
+                <div class="col-sm-12 no-padding">
+                  <div class="tabs offers-tabs">
+                    <div class="tabs-header">
+                      <ul>
+                        <li class="active">Description</li>
+                        <li>Specification</li>
+                        <li>Review (0)</li>
+                      </ul>
+                    </div>
+                    <div class="tabs-content">
+                      <div class="tabs-item active">
+                        <div class="row no-margin">
+                          <div class="col-sm-4">
+                            <img src="img/details01.jpg" alt="offers" class="img-responsive">
+                          </div>
+                          <div class="col-sm-8">
+                            <div class="heading">
+                              Product Description
+                            </div>
+                            <div class="info">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tabs-item">
+                        <div class="row no-margin">
+                          <div class="col-md-12">
+                            <div class="heading">
+                              Specifications
+                            </div>
+                            <p class="info">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p> 
+                            <hr>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tabs-item">
+                        <div class="row no-margin">
+                          <div class="col-md-12">
+                            <div class="heading">
+                              Reviews
+                            </div>
+                            <div class="info">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                            <h4 class="title">Be the first to review “Windows Phone”</h4>
+                            <p>Your email address will not be published. Required fields are marked *</p>
+                            <div class="rating">
+                              <p>Your Rating</p>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <form action="#" class="comments-form">
+                              <input type="text" name="name" placeholder="Your Name" class="input" required="">
+                              <input type="email" name="email" placeholder="E-mail" class="input" required="">
+                              <textarea name="comment" class="input comment" placeholder="Your Review..."></textarea>
+                              <input type="submit" class="btn btn-block btn-primary submit" value="submit">
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <aside class="sidebar">
+                <form action="#" class="search-group">
+                  <input type="text" name="search" placeholder="search" class="search">
+                  <i class="fa fa-search input-search"></i>
+                </form>
+                <div class="posts">
+                  <div class="tabs-content">
+                    <div class="tabs-item active">
+                      <div class="item-wrap">
+                        <a href=""><img src="img/details04.jpg" alt="photo" class="img"></a>
+                        <div class="heading-article"><a href="">Macbook Pro</a></div>
+                        <div class="value"><a href=""><del>$1.477.00</del> <br><span>$1.231.00</span></a></div>
+                      </div>
+                      <div class="item-wrap clear">
+                        <a href=""><img src="img/details05.jpg" alt="photo" class="img"></a>
+                        <div class="heading-article"><a href="">Windows Phone</a></div>
+                        <div class="value"><a href=""><del>$577.00</del> <br><span>$426.00</span></a></div>
+                      </div>
+                      <div class="item-wrap clear">
+                        <a href=""><img src="img/details06.jpg" alt="photo" class="img"></a>
+                        <div class="heading-article"><a href="">Tablet</a></div>
+                        <div class="value"><a href=""><del>$489.00</del> <br><span>$356.00</span></a></div>
+                      </div>
+                    </div>
+                    <div class="tabs-item">
+                      <div class="item-wrap">
+                        <a href=""><img src="img/blog07.jpg" alt="photo" class="img"></a>
+                        <div class="heading-article"><a href="">LG Phone</a></div>
+                        <div class="value"><a href=""><del>$589.00</del> <br><span>$456.85</span></a></div>
+                      </div>
+                      <div class="item-wrap clear">
+                        <a href=""><img src="img/blog08.jpg" alt="photo" class="img"></a>
+                        <div class="heading-article"><a href="">Tablet</a></div>
+                        <div class="value"><a href=""><del>$421.00</del> <br><span>$399.00</span></a></div>
+                      </div>
+                      <div class="item-wrap clear">
+                        <a href=""><img src="img/blog09.jpg" alt="photo" class="img"></a>
+                        <div class="heading-article"><a href="">Acer</a></div>
+                        <div class="value"><a href=""><del>$1.189.00</del> <br><span>$1.015.99</span></a></div>
+                      </div>
+                    </div>
+                    <div class="tabs-item">
+                      <div class="item-wrap">
+                        <a href=""><img src="img/blog07.jpg" alt="photo" class="img"></a>
+                        <div class="heading-article"><a href="">iMac</a></div>
+                        <div class="value"><a href=""><del>$1.489.00</del> <br><span>$1.231.85</span></a></div>
+                      </div>
+                      <div class="item-wrap clear">
+                        <a href=""><img src="img/blog08.jpg" alt="photo" class="img"></a>
+                        <div class="heading-article"><a href="">Smartphone</a></div>
+                        <div class="value"><a href=""><del>$889.00</del> <br><span>$772.49</span></a></div>
+                      </div>
+                      <div class="item-wrap clear">
+                        <a href=""><img src="img/blog09.jpg" alt="photo" class="img"></a>
+                        <div class="heading-article"><a href="">iPad</a></div>
+                        <div class="value"><a href=""><del>$699.00</del> <br><span>$626.00</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="categories clear">
+                  <div class="heading active"><a href="">Product Categories</a></div>
+                  <div class="line active"></div>
+                  <div class="heading"><a href="">PC & iMac</a> <span>66</span></div>
+                  <div class="line"></div>
+                  <div class="heading"><a href="">Laptop</a> <span>45</span></div>
+                  <div class="line"></div>
+                  <div class="heading"><a href="">iPhone</a> <span>33</span></div>
+                  <div class="line"></div>
+                  <div class="heading"><a href="">Macbook</a> <span>106</span></div>
+                  <div class="line"></div>
+                  <div class="heading"><a href="">Tablets & iPad</a> <span>13</span></div>
+                  <div class="line"></div>
+                  <div class="heading"><a href="">Smartphone</a> <span>22</span></div>
+                </div>
+                <div class="tags">
+                  <div class="heading active">Product tags</div>
+                  <div class="line active"></div>
+                  <div class="tag"><a href="">Computers</a></div>
+                  <div class="tag"><a href="">Graphics</a></div>
+                  <div class="tag"><a href="">Glass Repair</a></div>
+                  <div class="tag"><a href="">Motherboard</a></div>
+                  <div class="tag"><a href="">CPU</a></div>
+                  <div class="tag"><a href="">Hard Drive</a></div>
+                  <div class="tag"><a href="">Repair</a></div>
+                  <div class="tag"><a href="">Laptop</a></div>
+                  <br>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+    <!-- 
+    *******************
+    E-SHOP RECOMMENDED 
+    ******************* 
+    -->
+    <section class="section-content section-bg2">
+      <div class="team-about recommended">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+              <h2 class="section-heading">E-Shop - Related Product</h2>
+              <p class="section-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 no-padding">
+              <div class="slider-container slider-filter blog-slider">
+                <div class="slider-wrap">
+                  <div class="swiper-container main-slider" data-autoplay="4000" data-touch="1" data-mouse="0" data-slides-per-view="responsive" data-loop="1" data-speed="1200" data-mode="horizontal" data-xs-slides="1" data-sm-slides="2" data-md-slides="4" data-lg-slides="4">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="col-lg-12 col-md-3 col-sm-6 full">
+                          <div class="wow fadeInDown animated" data-wow-delay="0.2s">
+                            <div class="product-item">
+                              <img src="img/recoproduct01.jpg" class="img-responsive" width="255" height="322" alt="">
+                              <div class="sell-meta">
+                                <a href="#" class="new-item">Recommended</a>
+                              </div>
+                              <div class="product-hover">
+                                <div class="product-meta">
+                                  <a href="#"><i class="fa fa-heart-o"></i></a>
+                                  <a href="#"><i class="fa fa-random"></i></a>
+                                  <a href="#"><i class="fa fa-clock-o"></i></a>
+                                  <a href="#"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                </div>
+                              </div>
+                              <div class="rating">
+                                <i class="fa fa-star rate"></i>
+                                <i class="fa fa-star rate"></i>
+                                <i class="fa fa-star rate"></i>
+                                <i class="fa fa-star rate"></i>
+                                <i class="fa fa-star rate"></i>
+                              </div>
+                              <div class="product-title">
+                                <a href="#">
+                                  <h3>iPad</h3>
+                                  <span>$626,00</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="col-lg-12 col-md-3 col-sm-6 full">
+                          <div class="product-item">
+                            <img src="img/recoproduct02.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="sell-meta">
+                              <a href="#" class="new-item">Recommended</a>
+                            </div>
+                            <div class="product-hover">
+                              <div class="product-meta">
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                                <a href="#"><i class="fa fa-random"></i></a>
+                                <a href="#"><i class="fa fa-clock-o"></i></a>
+                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                              </div>
+                            </div>
+                            <div class="rating">
+                              <i class="fa fa-star rate"></i>
+                              <i class="fa fa-star rate"></i>
+                              <i class="fa fa-star rate"></i>
+                              <i class="fa fa-star rate"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-title">
+                              <a href="#">
+                                <h3>iMac</h3>
+                                <span>$1.231,85</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>  
+                      <div class="swiper-slide">
+                        <div class="col-lg-12 col-md-3 col-sm-6 full">
+                          <div class="product-item">
+                            <img src="img/recoproduct03.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-hover">
+                              <div class="product-meta">
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                                <a href="#"><i class="fa fa-random"></i></a>
+                                <a href="#"><i class="fa fa-clock-o"></i></a>
+                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                              </div>
+                            </div>
+                            <div class="rating">
+                              <i class="fa fa-star rate"></i>
+                              <i class="fa fa-star rate"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-title">
+                              <a href="#">
+                                <h3>Smartphone</h3>
+                                <span>$772,49</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>  
+                      <div class="swiper-slide">
+                        <div class="col-lg-12 col-md-3 col-sm-6 full">
+                          <div class="product-item">
+                            <img src="img/recoproduct04.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="sell-meta">
+                              <a href="#" class="new-item">Recommended</a>
+                            </div>
+                            <div class="product-hover">
+                              <div class="product-meta">
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                                <a href="#"><i class="fa fa-random"></i></a>
+                                <a href="#"><i class="fa fa-clock-o"></i></a>
+                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                              </div>
+                            </div>
+                            <div class="rating">
+                              <i class="fa fa-star rate"></i>
+                              <i class="fa fa-star rate"></i>
+                              <i class="fa fa-star rate"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-title">
+                              <a href="#">
+                                <h3>iPhone</h3>
+                                <span>$776,00</span>
+                              </a>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pagination vertical-mode pagination-index"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>   
+    <!-- 
+    *******************
+        TOP FOOTER
+    ******************* 
+    -->
+    <div class="top-footer-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-feature-inner">
+              <div class="feature-top-item">
+                <div class="media">
+                  <div class="media-left">
+                    <i class="fa fa-map-o"></i>
+                  </div>
+                  <div class="media-body">
+                    <span>Visit Us</span> No.02 - 399-0 Lorem Street City
+                  </div>
+                </div>
+              </div>
+              <div class="feature-top-item">
+                <div class="media">
+                  <div class="media-left">
+                    <i class="fa fa-volume-control-phone"></i>
+                  </div>
+                  <div class="media-body">
+                    <span>Call Us</span> +(123)1300-656-1046
+                  </div>
+                </div>
+              </div>
+              <div class="feature-top-item">
+                <div class="media">
+                  <div class="media-left">
+                    <i class="fa fa-envelope-open-o"></i>
+                  </div>
+                  <div class="media-body">
+                    <span>Email Us</span>
+                    <a href="#"> tec@fix.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    *******************
+          FOOTER
+    ******************* 
+    -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="heading">Services</div>
+              <ul class="footer-menu classic">
+                <li class="menu-item"><a href="pc-imac-repair.html">PC & Mac Repair</a></li>
+                <li class="menu-item"><a href="laptop-repair.html">Laptop Repair</a></li>
+                <li class="menu-item"><a href="tablet-repair.html">Tablet Repair</a></li>
+                <li class="menu-item"><a href="smartphone-repair.html">Smartphone Repair</a></li>
+                <li class="menu-item"><a href="macbook-repair.html">Macbook Repair</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="heading">Support</div>
+              <ul class="footer-menu classic">
+                <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+                <li class="menu-item"><a href="about.html">About Us</a> </li>
+                <li class="menu-item"><a href="team.html">Our Team</a></li>
+                <li class="menu-item"><a href="pricing-tables.html">Pricing Tables</a></li>
+                <li class="menu-item"><a href="faq.html">Faq</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="heading">Tech Fix</div>
+              <ul class="footer-menu classic">
+                <li class="menu-item"><a href="#" data-toggle="modal" data-target="#mylogin">Login</a></li>
+                <li class="menu-item"><a href="contact.html">Questions?</a> </li>
+                <li class="menu-item"><a href="countdown.html">Countdown</a></li>
+                <li class="menu-item"><a href="elements.html">Elements</a></li>
+                <li class="menu-item"><a href="404.html">Page 404</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <a><img src="img/logo-light.png" alt="logo"></a>
+              <div class="copyrigh">©2017 Tech Fix - All rights reserved.</div>
+              <div class="social">Stay Connected</div>
+              <div class="soc-icons">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a> 
+                <a href=""><i class="fa fa-linkedin"></i></a>                     
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subcribe news">
+        <div class="container">
+          <form action="#" class="form">
+            <div class="row">
+              <div class="col-4">
+                <span class="">Get The Newsletter</span>
+                <p>Subscribe to our newsletter to receive news and updates.</p>
+              </div>
+              <div class="col-8">
+                <input type="email" name="email" placeholder="Enter your email address" class="email-input">
+                <input type="submit" value="SUBSCRIBE" class="btn btn-default-alt-white">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="container-fluid no-padding">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="footer-bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <ul class="footer-menu">
+                      <li class="menu-item"><a href="#">Legal</a></li>
+                      <li class="menu-item"><a href="#">Sitemap</a></li>
+                      <li class="menu-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <ul class="payment-list">
+                      <li>
+                        <p>Payments We Accept</p>
+                      </li>
+                      <li><i class="fa fa-cc-paypal"></i></li>
+                      <li><i class="fa fa-cc-visa"></i></li>
+                      <li><i class="fa fa-cc-mastercard"></i></li>
+                      <li><i class="fa fa-credit-card"></i></li>
+                      <li><i class="fa fa-cc-discover"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#0" class="cd-top"></a>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/idangerous.swiper.min.js"></script>
+    <script src="js/jquery.viewportchecker.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.circliful.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'includes/head.html' %}
+</head>
+
+<body>
+
+    {% include 'includes/spinner.html' %}
+
+    {% include 'includes/navbar.html' %}
+
+    {% include 'includes/main_header.html' %}
+
+    {% block index %}
+    {% endblock index %}
+
+    {% include 'includes/footer.html' %}
+    <a href="#0" class="cd-top"></a>
+
+    {% include 'includes/javascript.html' %}
+
+</body>
+</html>
