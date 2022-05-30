@@ -6,5 +6,9 @@ def index(request):
     return render(request, 'index.html')
 
 
-def services(request):
+def about(request):
     return render(request, 'about.html')
+
+
+def error_404(request):
+    return render(request, '404.html')
