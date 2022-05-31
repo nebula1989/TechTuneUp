@@ -1,259 +1,271 @@
 {% extends 'base.html' %}
-{% load static %}
 
 {% block content %}
-<!--
-*******************
-      TOP BANNER
-*******************
--->
-<div class="top-header overlay img-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="wrapper">
-                    <div class="heading">about us</div>
-                    <div class="subheding">
-                        <a href="index.html" class="link">home</a><small>&#9733;</small>
-                        <a href="#" class="link">pages</a><small>&#9733;</small>
-                        <a href="about.html" class="link active">about us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--
-*******************
-      ABOUT US
-*******************
--->
-<section class="section-content section-bg2">
-    <div class="about-info">
+    <!--
+    *******************
+          TOP BANNER
+    *******************
+    -->
+    <div class="top-header overlay img-bg">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 col-md-6 col-sm-12">
-                    <div class="heading">About Tech Fix</div>
-                    <div class="subheading">
-                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-                            nisi ut aliquid ex ea commodi consequatur. But I must explain to you how all this mistaken
-                            idea of denouncing pleasure and praising pain was born and I will give you a complete
-                            account of the system.</p><br>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
-                            est laborum et dolorum fuga.</p>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-sm-12">
-                    <img src="img/about01.jpg" alt="" class="img-about img-responsive">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--
-*******************
-  TEAM STYLE 03
-*******************
--->
-<section class="section-content">
-    <div class="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <p class="section-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="col-sm-12">
                     <div class="wrapper">
-                        <div class="img-section">
-                            <img src="img/team01.jpg" alt="team" class="img-responsive">
-                            <div class="soc-icons-wrap">
-                                <div class="icons">
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-skype"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-info">
-                            <h3 class="heading">Nathan</h3>
-                            <div class="subheading">CEO</div>
-                            <div class="desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="wrapper">
-                        <div class="img-section">
-                            <img src="img/team02.jpg" alt="team" class="img-responsive">
-                            <div class="soc-icons-wrap">
-                                <div class="icons">
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-skype"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-info">
-                            <h3 class="heading">Charles</h3>
-                            <div class="subheading">Service Manager</div>
-                            <div class="desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="wrapper">
-                        <div class="img-section">
-                            <img src="img/team03.jpg" alt="team" class="img-responsive">
-                            <div class="soc-icons-wrap">
-                                <div class="icons">
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-skype"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-info">
-                            <h3 class="heading">Olivia</h3>
-                            <div class="subheading">Technical Support</div>
-                            <div class="desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="wrapper">
-                        <div class="img-section">
-                            <img src="img/team04.jpg" alt="team" class="img-responsive">
-                            <div class="soc-icons-wrap">
-                                <div class="icons">
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-skype"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-info">
-                            <h3 class="heading">Christian</h3>
-                            <div class="subheading">Marketing Associate</div>
-                            <div class="desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </div>
+                        <div class="heading">about us</div>
+                        <div class="subheding">
+                            <a href="index.html" class="link">home</a><small>&#9733;</small>
+                            <a href="#" class="link">pages</a><small>&#9733;</small>
+                            <a href="about.html" class="link active">about us</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-<!--
-******************
-      HISTORY
-******************
--->
-<section class="section-content section-bg2">
-    <div class="history-section">
-        <div class="container">
-            <div class="row section-heading-wrap">
-                <div class="col-md-12 col-sm-12 text-center">
-                    <h2 class="section-heading">Our History</h2>
-                    <p class="section-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt.</p>
-                </div>
-            </div>
-            <div class="history-separate first">
+    <!--
+    *******************
+          ABOUT US
+    *******************
+    -->
+    {% load static %}
+
+    <section class="section-content section-bg2">
+        <div class="about-info">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3">
-                        <div class="img-wrap">
-                            <img src="img/born01.jpg" alt="photo" class="img img-responsive">
+                    <div class="col-lg-7 col-md-6 col-sm-12">
+                        <div class="heading">About Tech Fix</div>
+                        <div class="subheading">
+                            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                                nisi ut aliquid ex ea commodi consequatur. But I must explain to you how all this
+                                mistaken
+                                idea of denouncing pleasure and praising pain was born and I will give you a complete
+                                account of the system.</p><br>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                occaecati
+                                cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi,
+                                id
+                                est laborum et dolorum fuga.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3">
-                        <div class="wrappper">
-                            <h4 class="title">
-                                Born TechFix
-                            </h4>
-                            <div class="desc">
-                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                                pain was born and I will.
-                            </div>
-                            <h5 class="date"><i class="fa fa-calendar"></i> 30 May <span class="year">1984</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3">
-                        <div class="img-wrap">
-                            <img src="img/born02.jpg" alt="photo" class="img img-responsive">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3">
-                        <div class="wrappper">
-                            <h4 class="title">
-                                High Quality TechFix
-                            </h4>
-                            <div class="desc">
-                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                                pain was born and I will.
-                            </div>
-                            <h5 class="date"><i class="fa fa-calendar"></i> 12 July <span class="year">2004</span></h5>
-                        </div>
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <img src="{% static 'img/about01.jpg' %}" alt="" class="img-about img-responsive">
                     </div>
                 </div>
             </div>
-            <div class="history-separate last">
+        </div>
+    </section>
+    <!--
+    *******************
+      TEAM STYLE 03
+    *******************
+    -->
+    <section class="section-content">
+        <div class="team">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="img-wrap">
-                            <img src="img/born03.jpg" alt="photo" class="img img-responsive">
-                        </div>
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <h2 class="section-heading">Our Amazing Team</h2>
+                        <p class="section-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt.</p>
                     </div>
-                    <div class="col-md-3">
-                        <div class="wrappper">
-                            <h4 class="title">
-                                Greate Support
-                            </h4>
-                            <div class="desc">
-                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                                pain was born and I will.
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="wrapper">
+                            <div class="img-section">
+                                <img src="{% static 'img/team01.jpg' %}" alt="team" class="img-responsive">
+                                <div class="soc-icons-wrap">
+                                    <div class="icons">
+                                        <a href=""><i class="fa fa-facebook"></i></a>
+                                        <a href=""><i class="fa fa-twitter"></i></a>
+                                        <a href=""><i class="fa fa-google-plus"></i></a>
+                                        <a href=""><i class="fa fa-skype"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                            <h5 class="date"><i class="fa fa-calendar"></i> 30 September <span class="year">2009</span>
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="img-wrap">
-                            <img src="img/born04.jpg" alt="photo" class="img img-responsive">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrappper">
-                            <h4 class="title">
-                                Quality Equipment
-                            </h4>
-                            <div class="desc">
-                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                                pain was born and I will.
+                            <div class="team-info">
+                                <h3 class="heading">Nathan</h3>
+                                <div class="subheading">CEO</div>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
                             </div>
-                            <h5 class="date"><i class="fa fa-calendar"></i> 26 July <span class="year">2014</span></h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="wrapper">
+                            <div class="img-section">
+                                <img src="{% static 'img/team02.jpg' %}" alt="team" class="img-responsive">
+                                <div class="soc-icons-wrap">
+                                    <div class="icons">
+                                        <a href=""><i class="fa fa-facebook"></i></a>
+                                        <a href=""><i class="fa fa-twitter"></i></a>
+                                        <a href=""><i class="fa fa-google-plus"></i></a>
+                                        <a href=""><i class="fa fa-skype"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3 class="heading">Charles</h3>
+                                <div class="subheading">Service Manager</div>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="wrapper">
+                            <div class="img-section">
+                                <img src="{% static 'img/team03.jpg' %}" alt="team" class="img-responsive">
+                                <div class="soc-icons-wrap">
+                                    <div class="icons">
+                                        <a href=""><i class="fa fa-facebook"></i></a>
+                                        <a href=""><i class="fa fa-twitter"></i></a>
+                                        <a href=""><i class="fa fa-google-plus"></i></a>
+                                        <a href=""><i class="fa fa-skype"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3 class="heading">Olivia</h3>
+                                <div class="subheading">Technical Support</div>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="wrapper">
+                            <div class="img-section">
+                                <img src="{% static 'img/team04.jpg' %}" alt="team" class="img-responsive">
+                                <div class="soc-icons-wrap">
+                                    <div class="icons">
+                                        <a href=""><i class="fa fa-facebook"></i></a>
+                                        <a href=""><i class="fa fa-twitter"></i></a>
+                                        <a href=""><i class="fa fa-google-plus"></i></a>
+                                        <a href=""><i class="fa fa-skype"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3 class="heading">Christian</h3>
+                                <div class="subheading">Marketing Associate</div>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <!--
+    ******************
+          HISTORY
+    ******************
+    -->
+    <section class="section-content section-bg2">
+        <div class="history-section">
+            <div class="container">
+                <div class="row section-heading-wrap">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <h2 class="section-heading">Our History</h2>
+                        <p class="section-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+                <div class="history-separate first">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="img-wrap">
+                                <img src="{% static 'img/born01.jpg' %}" alt="photo" class="img img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="wrappper">
+                                <h4 class="title">
+                                    Born TechFix
+                                </h4>
+                                <div class="desc">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising
+                                    pain was born and I will.
+                                </div>
+                                <h5 class="date"><i class="fa fa-calendar"></i> 30 May <span class="year">1984</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="img-wrap">
+                                <img src="{% static 'img/born02.jpg' %}" alt="photo" class="img img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="wrappper">
+                                <h4 class="title">
+                                    High Quality TechFix
+                                </h4>
+                                <div class="desc">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising
+                                    pain was born and I will.
+                                </div>
+                                <h5 class="date"><i class="fa fa-calendar"></i> 12 July <span class="year">2004</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-separate last">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="img-wrap">
+                                <img src="{% static 'img/born03.jpg' %}" alt="photo" class="img img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="wrappper">
+                                <h4 class="title">
+                                    Greate Support
+                                </h4>
+                                <div class="desc">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising
+                                    pain was born and I will.
+                                </div>
+                                <h5 class="date"><i class="fa fa-calendar"></i> 30 September <span
+                                        class="year">2009</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img-wrap">
+                                <img src="{% static 'img/born04.jpg' %}" alt="photo" class="img img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="wrappper">
+                                <h4 class="title">
+                                    Quality Equipment
+                                </h4>
+                                <div class="desc">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising
+                                    pain was born and I will.
+                                </div>
+                                <h5 class="date"><i class="fa fa-calendar"></i> 26 July <span class="year">2014</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
 

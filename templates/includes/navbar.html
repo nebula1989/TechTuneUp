@@ -21,11 +21,11 @@
                         <li class="menu-item menu-item-has-children">
                             <a href="#">Pages</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="pricing-tables.html">Pricing Tables</a></li>
-                                <li class="menu-item"><a href="about.html"> About Us</a></li>
-                                <li class="menu-item"><a href="team.html">Our Team</a></li>
-                                <li class="menu-item"><a href="faq.html">Faq</a></li>
-                                <li class="menu-item"><a href="register.html">Register</a></li>
+                                <li class="menu-item"><a href="{% url 'pricing_tables' %}">Pricing Tables</a></li>
+                                <li class="menu-item"><a href="{% url 'about' %}"> About Us</a></li>
+                                <li class="menu-item"><a href="{% url 'team' %}">Our Team</a></li>
+                                <li class="menu-item"><a href="{% url 'faq' %}">Faq</a></li>
+                                <li class="menu-item"><a href="{% url 'register' %}">Register</a></li>
                                 <li class="menu-item"><a href="#" data-toggle="modal"
                                                          data-target="#mylogin">Login</a></li>
                             </ul>
@@ -57,15 +57,7 @@
                         <span class="icon"></span>
                     </button>
                     <ul class="main-menu">
-                        <li class="menu-item active menu-item-has-children">
-                            <a>Home</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="index.html">Homepage v1</a></li>
-                                <li class="menu-item"><a href="homepage-2.html">Homepage v2</a></li>
-                                <li class="menu-item"><a href="homepage-3.html">Homepage v3</a></li>
-                                <li class="menu-item"><a href="homepage-4.html">Homepage v4</a></li>
-                            </ul>
-                        </li>
+
                         <li class="menu-item menu-item-has-children">
                             <a>Services</a>
                             <ul class="sub-menu">
@@ -80,40 +72,20 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a>E-Shop</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="shop.html">e-Shop Products</a></li>
-                                <li class="menu-item"><a href="shop-2.html">e-Shop Side Bar</a></li>
-                                <li class="menu-item"><a href="shop-3.html">e-Shop Product Details</a></li>
-                                <li class="menu-item"><a href="cart.html">Cart</a></li>
-                                <li class="menu-item"><a href="checkout.html">Checkout</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a>Blog</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="blog.html">Blog v1</a></li>
-                                <li class="menu-item"><a href="blog-2.html">Blog v2</a></li>
-                                <li class="menu-item"><a href="blog-single.html">Blog Details</a></li>
-                            </ul>
-                        </li>
+
                         <li class="menu-item menu-item-has-children">
                             <a>Pages</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="pricing-tables.html">Pricing Tables</a></li>
+                                <li class="menu-item"><a href="{% url 'pricing_tables' %}">Pricing Tables</a></li>
                                 <li class="menu-item"><a href="about.html"> About Us</a></li>
                                 <li class="menu-item"><a href="team.html">Our Team</a></li>
-                                <li class="menu-item"><a href="404.html">404</a></li>
-                                <li class="menu-item"><a href="countdown.html">Coming Soon</a></li>
-                                <li class="menu-item"><a href="register.html">Register</a></li>
                                 <li class="menu-item"><a href="faq.html">Faq</a></li>
+                                <li class="menu-item"><a href="register.html">Register</a></li>
                                 <li class="menu-item"><a href="#" data-toggle="modal"
                                                          data-target="#mylogin">Login</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item"><a href="elements.html">Elements</a></li>
-                        <li class="menu-item menu-last"><a href="contact.html">Contact</a></li>
+                        <li class="menu-item menu-last"><a href="{% url 'contact' %}">Contact</a></li>
                     </ul>
                 </nav>
             </div>
