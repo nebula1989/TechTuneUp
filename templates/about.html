@@ -1,27 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <!--
-    *******************
-          TOP BANNER
-    *******************
-    -->
-    <div class="top-header overlay img-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="wrapper">
-                        <div class="heading">about us</div>
-                        <div class="subheding">
-                            <a href="index.html" class="link">home</a><small>&#9733;</small>
-                            <a href="#" class="link">pages</a><small>&#9733;</small>
-                            <a href="about.html" class="link active">about us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    {% include 'includes/top_banner.html' %}
     <!--
     *******************
           ABOUT US
@@ -189,7 +170,7 @@
                         <div class="col-lg-3 col-md-3">
                             <div class="wrappper">
                                 <h4 class="title">
-                                    Born TechFix
+                                    Born TechTuneUp
                                 </h4>
                                 <div class="desc">
                                     But I must explain to you how all this mistaken idea of denouncing pleasure and
@@ -208,7 +189,7 @@
                         <div class="col-lg-3 col-md-3">
                             <div class="wrappper">
                                 <h4 class="title">
-                                    High Quality TechFix
+                                    High Quality TechTuneUp
                                 </h4>
                                 <div class="desc">
                                     But I must explain to you how all this mistaken idea of denouncing pleasure and

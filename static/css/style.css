@@ -1,5 +1,5 @@
 /*!
- * Template Name: TechFix
+ * Template Name: TechTuneUp
  * Author: - inebur.com
  */
 /*
@@ -1532,7 +1532,7 @@ hr {
 .btn.btn-primary {
     background-color: #F3F3F3;
     border-color: #F3F3F3;
-    color: #fff;
+    color: #1b1e21;
 }
 
 .btn.btn-primary:hover {
@@ -8768,7 +8768,7 @@ hr {
 
 .column-support-title {
     font-size: 14px;
-    color: #fff;
+    color: #1b1e21;
     line-height: 1;
     margin-bottom: 12px;
 }
@@ -8778,7 +8778,8 @@ hr {
     line-height: 1;
     font-family: "Open Sans SemiBold", sans-serif;
     font-weight: 700;
-    color: #fff;
+    color: #1b1e21;
+
     text-transform: uppercase;
 }
 
@@ -9459,7 +9460,7 @@ hr {
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
-    background: rgba(255, 197, 39, 0.6) url(../img/cd-top-arrow.png) no-repeat center 50%;
+    background: rgb(255, 255, 255) url(../img/cd-top-arrow.png) no-repeat center 50%;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity .3s 0s, visibility 0s .3s;

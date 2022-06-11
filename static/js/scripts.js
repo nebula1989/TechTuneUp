@@ -589,7 +589,7 @@ function initialize(_this) {
         infowindow.open(map, marker);
     });
     var infowindow = new google.maps.InfoWindow({
-        content: "TechFix Company"
+        content: "TechTuneUp Company"
     });
 
 }

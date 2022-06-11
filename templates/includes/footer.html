@@ -1,4 +1,6 @@
 {% load static %}
+
+{% load custom_tags %}
 <!--
     *******************
         TOP FOOTER
@@ -15,7 +17,7 @@
                                 <i class="fa fa-map-o"></i>
                             </div>
                             <div class="media-body">
-                                <span>Visit Us</span> No.02 - 399-0 Lorem Street City
+                                <span>Location</span>1008 Grand Ridge Dr, Rolesville NC 27571
                             </div>
                         </div>
                     </div>
@@ -25,7 +27,7 @@
                                 <i class="fa fa-volume-control-phone"></i>
                             </div>
                             <div class="media-body">
-                                <span>Call Us</span> +(123)1300-656-1046
+                                <span>Call Us</span> <a href="callto:+19192836658">(919) 283-6658</a>
                             </div>
                         </div>
                     </div>
@@ -36,7 +38,7 @@
                             </div>
                             <div class="media-body">
                                 <span>Email Us</span>
-                                <a href="#"> tec@fix.com</a>
+                                <a href="mailto:ben@techtuneup.org">ben@techtuneup.org</a>
                             </div>
                         </div>
                     </div>
@@ -76,7 +78,7 @@
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <div class="heading">Tech Fix</div>
+                    <div class="heading">My Tech Tune Up</div>
                     <ul class="footer-menu classic">
                         <li class="menu-item"><a href="#" data-toggle="modal" data-target="#mylogin">Login</a></li>
                         <li class="menu-item"><a href="contact.html">Questions?</a></li>
@@ -85,9 +87,10 @@
                         <li class="menu-item"><a href="404.html">Page 404</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <a><img src="{% static 'img/logo-light.png' %}" alt="logo"></a>
-                    <div class="copyrigh">©2019 Tech Fix - All rights reserved.</div>
+                <div class="col-md-3 col-sm-6" style="color: whitesmoke">
+                    <a><img src="{% static 'img/techtuneup_logo.png' %}" alt="logo"></a>
+                    <div class="copyright">©{% current_year %}{{ current_year }} Tech Tune Up</div>
+                    <div class="copyright">All Rights Reserved.</div>
                     <div class="social">Stay Connected</div>
                     <div class="soc-icons">
                         <a href=""><i class="fa fa-facebook"></i></a>
@@ -105,7 +108,7 @@
                 <div class="row">
                     <div class="col-4">
                         <span class="">Get The Newsletter</span>
-                        <p>Subscribe to our newsletter to receive news and updates.</p>
+                        <p>Subscribe to our newsletter to receive special deals and updates.</p>
                     </div>
                     <div class="col-8">
                         <input type="email" name="email" placeholder="Enter your email address" class="email-input">

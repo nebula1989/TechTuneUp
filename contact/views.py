@@ -14,6 +14,9 @@ def contact_view(request):
             send_mail(email_subject, email_message, settings.CONTACT_EMAIL, settings.ADMIN_EMAIL)
             return render(request, 'contact.html')
     form = ContactForm()
-    context = {'form': form}
+    context = {
+        "top_banner_name": "Contact",
+        'form': form
+    }
 
     return render(request, 'contact.html', context)

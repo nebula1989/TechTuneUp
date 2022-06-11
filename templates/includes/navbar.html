@@ -26,8 +26,7 @@
                                 <li class="menu-item"><a href="{% url 'team' %}">Our Team</a></li>
                                 <li class="menu-item"><a href="{% url 'faq' %}">Faq</a></li>
                                 <li class="menu-item"><a href="{% url 'register' %}">Register</a></li>
-                                <li class="menu-item"><a href="#" data-toggle="modal"
-                                                         data-target="#mylogin">Login</a></li>
+                                <li class="menu-item"><a href="{% url 'login' %}">Login</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children menu-last"><a href="{% url 'contact' %}">Contact</a>
@@ -77,12 +76,12 @@
                             <a>Pages</a>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="{% url 'pricing_tables' %}">Pricing Tables</a></li>
-                                <li class="menu-item"><a href="about.html"> About Us</a></li>
-                                <li class="menu-item"><a href="team.html">Our Team</a></li>
-                                <li class="menu-item"><a href="faq.html">Faq</a></li>
-                                <li class="menu-item"><a href="register.html">Register</a></li>
+                                <li class="menu-item"><a href="{% url 'about' %}"> About Us</a></li>
+                                <li class="menu-item"><a href="{% url 'team' %}">Our Team</a></li>
+                                <li class="menu-item"><a href="{% url 'faq' %}">Faq</a></li>
+                                <li class="menu-item"><a href="{% url 'register' %}">Register</a></li>
                                 <li class="menu-item"><a href="#" data-toggle="modal"
-                                                         data-target="#mylogin">Login</a></li>
+                                                         data-target="{% url 'login' %}">Login</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-last"><a href="{% url 'contact' %}">Contact</a></li>

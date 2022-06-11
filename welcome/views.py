@@ -6,27 +6,52 @@ def index(request):
 
 
 def about(request):
-    return render(request, 'about.html')
+    context = {
+        "top_banner_name": "About",
+    }
+    return render(request, 'about.html', context)
 
 
 def repair_services(request):
-    return render(request, 'all-services-repair.html')
+    context = {
+        "top_banner_name": "Repair Services",
+    }
+    return render(request, 'all-services-repair.html', context)
 
 
 def pricing_tables(request):
-    return render(request, 'pricing-tables.html')
+    context = {
+        "top_banner_name": "Prices",
+    }
+    return render(request, 'pricing-tables.html', context)
 
 
 def team(request):
-    return render(request, 'team.html')
+    context = {
+        "top_banner_name": "Meet the Team",
+    }
+    return render(request, 'team.html', context)
 
 
 def register(request):
-    return render(request, 'register.html')
+    context = {
+        "top_banner_name": "Sign Up",
+    }
+    return render(request, 'register.html', context)
+
+
+def login(request):
+    context = {
+        "top_banner_name": "Login",
+    }
+    return render(request, 'login.html', context)
 
 
 def faq(request):
-    return render(request, 'faq.html')
+    context = {
+        "top_banner_name": "FAQ",
+    }
+    return render(request, 'faq.html', context)
 
 
 def error_404(request):
