@@ -60,64 +60,42 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="heading">Services</div>
                     <ul class="footer-menu classic">
-                        <li class="menu-item"><a href="pc-imac-repair.html">PC & Mac Repair</a></li>
-                        <li class="menu-item"><a href="laptop-repair.html">Laptop Repair</a></li>
-                        <li class="menu-item"><a href="tablet-repair.html">Tablet Repair</a></li>
-                        <li class="menu-item"><a href="smartphone-repair.html">Smartphone Repair</a></li>
-                        <li class="menu-item"><a href="macbook-repair.html">Macbook Repair</a></li>
+                        <li class="menu-item"><a href="pc-imac-repair.html">Technology Supplier & Service</a></li>
+                        <li class="menu-item"><a href="laptop-repair.html">PC & Laptop Repair</a></li>
+                        <li class="menu-item"><a href="tablet-repair.html">Mobile Device Repair</a></li>
+                        <li class="menu-item"><a href="tablet-repair.html">Gaming Console Repair</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="heading">Support</div>
                     <ul class="footer-menu classic">
-                        <li class="menu-item"><a href="contact.html">Contact Us</a></li>
-                        <li class="menu-item"><a href="about.html">About Us</a></li>
-                        <li class="menu-item"><a href="team.html">Our Team</a></li>
-                        <li class="menu-item"><a href="pricing-tables.html">Pricing Tables</a></li>
-                        <li class="menu-item"><a href="faq.html">Faq</a></li>
+                        <li class="menu-item"><a href="{% url 'contact' %}">Contact Us</a></li>
+                        <li class="menu-item"><a href="{% url 'about' %}">About Us</a></li>
+                        <li class="menu-item"><a href="{% url 'team' %}">Our Team</a></li>
+                        <li class="menu-item"><a href="{% url 'pricing_tables' %}">Pricing Tables</a></li>
+                        <li class="menu-item"><a href="{% url 'faq' %}">Faq</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="heading">My Tech Tune Up</div>
                     <ul class="footer-menu classic">
-                        <li class="menu-item"><a href="#" data-toggle="modal" data-target="#mylogin">Login</a></li>
-                        <li class="menu-item"><a href="contact.html">Questions?</a></li>
-                        <li class="menu-item"><a href="countdown.html">Countdown</a></li>
-                        <li class="menu-item"><a href="elements.html">Elements</a></li>
-                        <li class="menu-item"><a href="404.html">Page 404</a></li>
+                        <li class="menu-item"><a href="{% url 'login' %}" data-toggle="modal" data-target="#mylogin">Login</a></li>
+                        <li class="menu-item"><a href="{% url 'contact' %}">Questions?</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-6" style="color: whitesmoke">
                     <a><img src="{% static 'img/techtuneup_logo.png' %}" alt="logo"></a>
-                    <div class="copyright">©{% current_year %}{{ current_year }} Tech Tune Up</div>
-                    <div class="copyright">All Rights Reserved.</div>
+                    <div class="copyright">©{% current_year %}{{ current_year }} Tech Tune Up<br>All Rights Reserved.</div>
                     <div class="social">Stay Connected</div>
                     <div class="soc-icons">
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-google-plus"></i></a>
-                        <a href=""><i class="fa fa-twitter"></i></a>
-                        <a href=""><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/TechTuneUpNC" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/TechTuneUp2" target="_blank"><i class="fa fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="subcribe news">
-        <div class="container">
-            <form action="#" class="form">
-                <div class="row">
-                    <div class="col-4">
-                        <span class="">Get The Newsletter</span>
-                        <p>Subscribe to our newsletter to receive special deals and updates.</p>
-                    </div>
-                    <div class="col-8">
-                        <input type="email" name="email" placeholder="Enter your email address" class="email-input">
-                        <input type="submit" value="SUBSCRIBE" class="btn btn-default-alt-white">
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+
     <div class="container-fluid no-padding">
         <div class="row">
             <div class="col-sm-12">

@@ -916,7 +916,7 @@ hr {
 
     .nav-menu .menu-toggle {
         padding: 7px 6px 4px 6px;
-        background-color: #F3F3F3;
+        background-color: #2a363f;
         display: inline-block;
         position: absolute;
         right: 15px;
@@ -6893,14 +6893,6 @@ hr {
     margin-top: 30px;
 }
 
-.history-section .wrappper .title:before {
-    height: 3px;
-    width: 30px;
-    content: "";
-    background-color: #F3F3F3;
-    position: absolute;
-    top: 75px;
-}
 
 .history-section .wrappper .desc {
     font-family: "Lato Light", sans-serif;
@@ -6927,7 +6919,7 @@ hr {
     color: #fff;
     padding: 7px 10px;
     font-size: 13px;
-    background-color: #F3F3F3;
+    background-color: #8d8d8d;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
@@ -9158,10 +9150,10 @@ hr {
     color: #B0BEC5;
 }
 
-.footer .copyrigh {
+.footer .copyright {
     font-family: "Lato Light", sans-serif;
     font-size: 15px;
-    color: #808080;
+    color: #AEB0B5;
     padding-top: 10px;
     padding-bottom: 25px;
 }
@@ -9282,7 +9274,7 @@ hr {
         font-size: 12px !important;
     }
 
-    .footer .footer-bottom .copyrigh {
+    .footer .footer-bottom .copyright {
         margin-bottom: 10px;
         font-size: 14px;
     }
