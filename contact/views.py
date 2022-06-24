@@ -15,6 +15,8 @@ def contact_view(request):
             send_mail(email_subject, email_message, settings.CONTACT_EMAIL, settings.ADMIN_EMAIL)
             messages.success(request, 'Contact Email Sent Successfully!')
             return redirect('index')
+        else:
+            messages.error(request, "Oops something went wrong")
     form = ContactForm()
     context = {
         "title": "Contact",
