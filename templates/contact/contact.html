@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+*******************
+CONTACT US
+*******************
+-->
+{% block content %}
+
+    {% include 'includes/top_banner.html' %}
+
+    <section class="section-content">
+        <div class="register contact-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="subtitle">Contact Form</div>
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ form }}
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-contact">
+                            <div class="subtitle">Contact Info</div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="contact-info">
+                                        <div class="icon-container"><i class="fa fa-envelope"></i></div>
+                                        <div class="heading">Email</div>
+                                        <div class="info">
+                                            Info and Support: <a href="mailto:ben@techtuneup.org">ben@techtuneup.org</a><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="contact-info">
+                                        <div class="icon-container"><i class="fa fa-home fa fa-phone"></i></div>
+                                        <div class="heading">Telephone</div>
+                                        <div class="info">
+                                            Landline: <a href="tel:+19192836658">(919) 283-6658</a><br>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+
+                                <div class="col-xs-12">
+                                    <div class="contact-info">
+                                        <div class="icon-container"><i class="fa fa-home fa fa-house"></i></div>
+                                        <div class="heading">Address</div>
+                                        <div class="info">
+                                            Location: <span> 1008 Grand Ridge Dr, Rolesville, NC</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="contact-info">
+                                        <div class="info">
+                                            <div class="social-icons">
+                                                <a href="https://www.facebook.com/TechTuneUpNC" target="_blank"><i
+                                                        class="fa fa-facebook"></i></a>
+                                                <a href="https://twitter.com/TechTuneUp2" target="_blank"><i
+                                                        class="fa fa-twitter"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

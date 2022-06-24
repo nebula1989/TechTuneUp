@@ -10,6 +10,9 @@ techtuneup/settings/.pg_service.conf
 techtuneup/settings/.my_pgpass
 techtuneup/settings/secrets.py
 
+# selenium
+geckodriver.log
+
 # Backup files # 
 *.bak 
 

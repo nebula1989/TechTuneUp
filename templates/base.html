@@ -3,26 +3,25 @@
 
 <head>
     {% include 'includes/head.html' %}
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}{{ title }}{% endblock %}</title>
 </head>
-
 
 
 <body>
 
-    {% include 'includes/spinner.html' %}
+{% include 'includes/spinner.html' %}
 
-    {% include 'includes/navbar.html' %}
+{% include 'includes/navbar.html' %}
 
-    {% include 'includes/main_header.html' %}
+{% include 'includes/main_header.html' %}
 
-    {% block content %}
-    {% endblock %}
+{% block content %}
+{% endblock %}
 
-    {% include 'includes/footer.html' %}
-    <a href="#0" class="cd-top"></a>
+{% include 'includes/footer.html' %}
+<a href="#0" class="cd-top"></a>
 
-    {% include 'includes/javascript.html' %}
+{% include 'includes/javascript.html' %}
 
 </body>
 </html>
