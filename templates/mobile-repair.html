@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Mobile Repair{% endblock %}
+
+{% block content %}
+    {% load static %}
+
+    {% include 'includes/top_banner.html' %}
+
+    <!--
+    *******************
+      ABOUT PRODUCT
+    *******************
+    -->
+    <section class="section-content section-bg2">
+        <div class="about-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6 col-sm-12">
+                        <div class="heading">Mobile Device Repair</div>
+                        <div class="subheading">
+                            <p>We offer repair services for Apple, Samsung, Google, and other brands.</p><br>
+                            <p>We can fix broken screens, cameras and microphones, bad charging ports, and more.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <img src="{% static 'img/iphone-repair-01.jpg' %}" alt="" class="img-about img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include 'includes/included-services.html' %}
+
+{% endblock %}

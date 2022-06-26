@@ -12,25 +12,60 @@ def about(request):
     return render(request, 'about.html', context)
 
 
+def all_services(request):
+    context = {
+        "top_banner_name": "All Services",
+    }
+    return render(request, 'all-services.html', context)
+
+
 def repair_services(request):
     context = {
         "top_banner_name": "Repair Services",
     }
-    return render(request, 'all-services-repair.html', context)
+    return render(request, 'repair-services-base.html', context)
 
 
 def tech_services(request):
     context = {
         "top_banner_name": "Technology Services",
     }
-    return render(request, 'all-services-technology.html', context)
+    return render(request, 'technology-services-base.html', context)
 
 
-def laptop_repair(request):
+def app_dev(request):
     context = {
-        "top_banner_name": "Laptop Repair",
+        "top_banner_name": "Application Development",
     }
-    return render(request, 'laptop-repair.html', context)
+    return render(request, 'development-services-base.html', context)
+
+
+def pc_repair(request):
+    context = {
+        "top_banner_name": "PC Repair",
+    }
+    return render(request, 'pc-repair.html', context)
+
+
+def mobile_repair(request):
+    context = {
+        "top_banner_name": "Mobile Repair",
+    }
+    return render(request, 'mobile-repair.html', context)
+
+
+def tablet_repair(request):
+    context = {
+        "top_banner_name": "Tablet Repair",
+    }
+    return render(request, 'tablet-repair.html', context)
+
+
+def gaming_repair(request):
+    context = {
+        "top_banner_name": "Gaming Console Repair",
+    }
+    return render(request, 'game-console-repair.html', context)
 
 
 def pricing_tables(request):
@@ -69,4 +104,9 @@ def faq(request):
 
 
 def error_404(request):
-    return render(request, '404.html')
+    context = {
+        "top_banner_name": "404 Page Not Found",
+    }
+    return render(request, '404.html', context)
+
+

@@ -1,13 +1,17 @@
 {% extends 'base.html' %}
-{% load static %}
-<!--
-*******************
-      SERVICE
-*******************
--->
+
+{% block title %}Gaming Console Repair{% endblock %}
+
 {% block content %}
+    {% load static %}
+
     {% include 'includes/top_banner.html' %}
 
+    <!--
+    *******************
+        SERVICE
+    *******************
+    -->
     <section class="section-content">
         <div class="horizontal-plans">
             <div class="container">
@@ -15,28 +19,30 @@
                     <div class="row">
                         <div class="col-md-5">
                             <div class="wrap-img">
-                                <img src="{% static 'img/tablet-repair-01.jpg' %}" alt="tablet" class="img img-responsive">
+                                <img src="{% static 'img/game-controller.jpg' %}" alt="game console"
+                                     class="img img-responsive">
                             </div>
                         </div>
                         <div class="col-md-7">
-                            <div class="heading">Tablet Repair Service</div>
+                            <div class="heading">Game Console Service</div>
                             <div class="subheading">
-                                <p>Whether it's an iPad, Surface, or Kindle, we can get your tablet back up and running.</p>
+                                <p>We can service and repair Nintendo, Sony, and Microsoft gaming systems.</p>
                             </div>
                             <div class="info-group">
-                                <span class="text"><i class="icon-zoom"></i> Glass Replacement</span>
+                                <span class="text"><i class="icon-zoom"></i> Touchscreen repair</span>
                                 <span class="text"><i class="icon-ipad"></i> Cracked Panels</span>
-                                <span class="text"><i class="icon-electric"></i> Charger Repair</span>
+                                <span class="text"><i class="icon-electric"></i> No Power</span>
                                 <span class="text"><i class="icon-battery"></i> Battery Replacement</span>
                                 <span class="text"><i class="icon-whater"></i> Water Damaged</span>
-                                <span class="text"><i class="icon-cpu"></i> Memory Upgrade</span>
+                                <span class="text"><i class="icon-cpu"></i> Upgrades</span>
                             </div>
-                            <a href="" class="btn btn-default-alt-yellow">Quick Repair Process</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-   {% include 'includes/included-services.html' %}
+
+    {% include 'includes/included-services.html' %}
+
 {% endblock %}

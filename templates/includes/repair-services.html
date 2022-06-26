@@ -28,12 +28,12 @@
                     <div class="col-lg-3 col-md-3">
                         <div class="wrappper">
                             <h4 class="title">
-                                Laptop Repair
+                                Computer Repair
                             </h4>
                             <div class="desc">
                                 Whether you broke it, or it broke itself, we'll get you back up and running quickly.
                             </div>
-                            <h5 class="read"><a href="{% url 'laptop_repair' %}"> Read More</a></h5>
+                            <h5 class="read"><a href="{% url 'pc_repair' %}"> Read More</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3">
@@ -50,7 +50,7 @@
                             <div class="desc">
                                 Apple, Samsung, and more.
                             </div>
-                            <h5 class="read"><a href="smartphone-repair.html"> Read More</a></h5>
+                            <h5 class="read"><a href="{% url 'mobile_repair' %}"> Read More</a></h5>
                         </div>
                     </div>
                 </div>
@@ -71,25 +71,25 @@
                             <div class="desc">
                                 iPads, Kindles, and more.
                             </div>
-                            <h5 class="read"><a href="tablet-repair.html"> Read More</a></h5>
+                            <h5 class="read"><a href="{% url 'tablet_repair' %}"> Read More</a></h5>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-3">
                         <div class="img-wrap">
-                            <img src="{% static 'img/pc-imac-repair-02.jpg' %}" alt="desktop repair photo"
+                            <img src="{% static 'img/nintendo-switch.jpg' %}" alt="gaming-system-repair"
                                  class="img img-responsive">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3">
                         <div class="wrappper">
                             <h4 class="title">
-                                Desktop Repair
+                                Gaming Console Repair
                             </h4>
                             <div class="desc">
-                                Gaming PCs, Office Desktops, and more.
+                                Nintendo, Playstation, XBOX.
                             </div>
-                            <h5 class="read"><a href="macbook-repair.html"> Read More</a></h5>
+                            <h5 class="read"><a href="{% url 'gaming_repair' %}"> Read More</a></h5>
                         </div>
                     </div>
                 </div>
@@ -97,3 +97,5 @@
         </div>
     </div>
 </section>
+
+{% include 'includes/included-services.html' %}

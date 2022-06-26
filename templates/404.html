@@ -1,48 +1,24 @@
 {% extends 'base.html' %}
 {% load static %}
-asdfasdfasdf
-<!--
-*******************
-      TOP BANNER
-*******************
--->
-<div class="top-header overlay img-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="wrapper">
-                    <div class="heading">404 Error</div>
-                    <div class="subheding">
-                        <a href="index.html" class="link">home</a><small>&#9733;</small>
-                        <a href="#" class="link">pages</a><small>&#9733;</small>
-                        <a href="about.html" class="link active">404 Error</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!--
 ******************
       SECTION 404
 ******************
 -->
-<section class="section-content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <div class="section-404">
-                    <form action="#" class="form">
-                        <div class="title"><i class="fa fa-bomb"></i><i class="fa fa-bomb"></i>ps! 404<br><span>This Repair Page not be found.</span>
+{% block content %}
+    {% include 'includes/top_banner.html' %}
+    <section class="section-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="section-404">
+                        <div class="title"><i class="fa fa-bomb"></i><i class="fa fa-bomb"></i>404<br><span>This page cannot be found.</span>
                         </div>
-                        <div class="subtitle">Use button below to go to main page of the site</div>
-                        <div class="input-group">
-                            <input type="text" name="page" class="input">
-                            <input type="submit" value="search" class="btn btn-primary">
-                        </div>
-                    </form>
+                        <div class="subtitle"><a href="{% url 'index' %}">Return Home</a></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+{% endblock %}

@@ -1,4 +1,5 @@
 {% load static %}
+
 <!--
 *******************
 NAV MENU
@@ -8,7 +9,7 @@ NAV MENU
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a href="{% url 'index' %}"><img src="{% static 'img/techtuneup_logo.png' %}" alt="logo"
+                <a href="{% url 'index' %}"><img src="{% static 'img/techtuneup_logo_trans.png' %}" alt="logo"
                                                  class="logo-menu"></a>
             </div>
             <div class="col-md-9 no-padding">
@@ -20,18 +21,29 @@ NAV MENU
                     </button>
                     <ul class="main-menu">
                         <li class="menu-item menu-item-has-children">
-                            <a href="#">Pages</a>
+                            <a href="{% url 'all_services' %}">Services</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="{% url 'pricing_tables' %}">Pricing Tables</a></li>
-                                <li class="menu-item"><a href="{% url 'about' %}"> About Us</a></li>
-                                <li class="menu-item"><a href="{% url 'team' %}">Our Team</a></li>
+                                <li class="menu-item"><a href="{% url 'repair_services' %}">Repair Services</a></li>
+                                <li class="menu-item"><a href="{% url 'app_dev' %}">Web and Mobile Application
+                                    Development</a></li>
+                                <li class="menu-item"><a href="{% url 'tech_services' %}"> Other Tech Services</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="{% url 'about' %}">About</a>
+                            <ul class="sub-menu">
                                 <li class="menu-item"><a href="{% url 'faq' %}">Faq</a></li>
+                            </ul>
+                        </li>
+                       {% comment %}
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">My Account</a>
+                            <ul class="sub-menu">
                                 <li class="menu-item"><a href="{% url 'register' %}">Register</a></li>
                                 <li class="menu-item"><a href="{% url 'login' %}">Login</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item menu-item-has-children menu-last"><a href="{% url 'contact' %}">Contact</a>
-                        </li>
+                       {% endcomment %}
                     </ul>
                 </nav>
             </div>

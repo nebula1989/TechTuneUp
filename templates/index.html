@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}Index{% endblock %}
+{% block title %}TechTuneUp Home{% endblock %}
 
 {% block content %}
     <!-- 
@@ -25,6 +25,21 @@
             </div>
         </div>
         <div class="full overlay item2">
+            <div class="vc-parent">
+                <div class="vc-child">
+                    <div class="top-banner modern">
+                        <div class="container">
+                            <div class="banner-wrap">
+                                <h1 class="heading">Web & Mobile Development</h1>
+                                <h3 class="subheading left">Does your business need a custom web or mobile app? We'd love to help you get one up and running.</h3>
+                            </div>
+                            <a href="{% url 'app_dev' %}" class="btn btn-default-alt-yellow">Application Development Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="full overlay item3">
             <div class="vc-parent">
                 <div class="vc-child">
                     <div class="top-banner modern">
@@ -59,7 +74,8 @@
         </div>
     </div>
 
-    {% include 'includes/all-repair-services.html' %}
+    {% include 'includes/repair-services.html' %}
+    {% include 'includes/technology-services.html' %}
 
     {% include 'includes/features.html' %}
 
