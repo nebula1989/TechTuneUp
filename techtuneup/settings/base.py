@@ -32,7 +32,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'welcome',
     'bootstrap4',
-    'contact.apps.ContactConfig'
+    'contact.apps.ContactConfig',
+    'captcha',
 ]
 
 MIDDLEWARE = [
