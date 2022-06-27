@@ -95,5 +95,12 @@ CONTACT US
         </div>
     </section>
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lchc6MgAAAAAIb22H8045orUEzMrf-Bl9_15ddg"></script>
+    <script>
+        grecaptcha.enterprise.ready(function () {
+            grecaptcha.enterprise.execute('6Lchc6MgAAAAAIb22H8045orUEzMrf-Bl9_15ddg', {action: 'login'}).then(function (token) {
+            ...
+            });
+        });
+    </script>
 {% endblock %}
