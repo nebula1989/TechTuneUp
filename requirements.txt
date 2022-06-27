@@ -1,4 +1,4 @@
-asgiref==3.5.0
+asgiref==3.5.2
 async-generator==1.10
 attrs==21.4.0
 backports.zoneinfo==0.2.1
@@ -7,15 +7,16 @@ captcha==0.4
 certifi==2022.6.15
 cffi==1.15.0
 cryptography==37.0.2
-Django==4.0.2
+Django==4.0.5
 django-bootstrap4==22.1
 django-ranged-response==0.2.0
 django-recaptcha==3.0.0
+django-simple-captcha==0.5.17
 h11==0.13.0
 idna==3.3
 install==1.3.5
 outcome==1.2.0
-Pillow==9.0.1
+Pillow==9.1.1
 psycopg2==2.9.3
 pycparser==2.21
 pyOpenSSL==22.0.0
