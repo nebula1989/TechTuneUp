@@ -26,3 +26,6 @@ STATIC_ROOT = '/home/bwalters89/techtuneup/static'
 STATIC_URL = '/static/'
 
 TIME_ZONE = 'UTC'
+
+# use the production recaptcha key from google
+RECAPTCHA_KEY = '6LcuvKIgAAAAADIiFVN9CrIuNv3qTYJhgiuV9TFU'

@@ -2,6 +2,8 @@ from django.conf import settings
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
+
+from techtuneup.settings import RECAPTCHA_KEY
 from .forms import ContactForm
 
 
@@ -21,7 +23,8 @@ def contact_view(request):
     context = {
         "title": "Contact",
         "top_banner_name": "Contact",
-        'form': form
+        'form': form,
+        "recaptcha_key": RECAPTCHA_KEY,
     }
 
     return render(request, 'contact/contact.html', context)

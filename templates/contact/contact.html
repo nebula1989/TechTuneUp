@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
 
+<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+
+
 *******************
 CONTACT US
 *******************
 -->
 {% block content %}
+
 
     {% include 'includes/top_banner.html' %}
 
@@ -14,7 +18,8 @@ CONTACT US
                 <div class="row">
                     <div class="col-md-8">
                         <div class="subtitle">Contact Form</div>
-                        <form action="" method="post">
+
+                        <form method="post" id="contact-form">
                             {% csrf_token %}
                             <div class="form-group">
                                 <label for="nameFormInput">Name</label>
@@ -31,7 +36,10 @@ CONTACT US
                                 <textarea name="message" type="text" class="form-control" id="messageFormInput"
                                           placeholder="Type a brief message..."> </textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <div class="g-recaptcha" data-sitekey="{{ recaptcha_key }}" data-callback="Verify"></div>
+
+                            <input type="submit" value="Submit">
+
                         </form>
                     </div>
 
@@ -90,4 +98,6 @@ CONTACT US
             </div>
         </div>
     </section>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 {% endblock %}
