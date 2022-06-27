@@ -95,12 +95,15 @@ CONTACT US
         </div>
     </section>
 
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lchc6MgAAAAAIb22H8045orUEzMrf-Bl9_15ddg"></script>
     <script>
         grecaptcha.enterprise.ready(function () {
-            grecaptcha.enterprise.execute('6Lchc6MgAAAAAIb22H8045orUEzMrf-Bl9_15ddg', {action: 'login'}).then(function (token) {
-            ...
+            grecaptcha.enterprise.execute('site_key', {action: 'contact'}).then(function (token) {
+                // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+                // reCAPTCHA Enterprise to the end user's browser.
+                // This token must be validated by creating an assessment.
+                // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
             });
         });
     </script>
+
 {% endblock %}
