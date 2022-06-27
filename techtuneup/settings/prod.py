@@ -28,4 +28,4 @@ STATIC_URL = '/static/'
 TIME_ZONE = 'UTC'
 
 # use the production recaptcha key from google
-RECAPTCHA_KEY = '6LcuvKIgAAAAADIiFVN9CrIuNv3qTYJhgiuV9TFU'
+RECAPTCHA_KEY = '6Ldv46MgAAAAAPsZUcAwvihjeiXc0zuKikNWeOBh'
