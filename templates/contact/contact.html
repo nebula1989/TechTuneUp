@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 
+
 *******************
 CONTACT US
 *******************
@@ -9,6 +10,7 @@ CONTACT US
 
 
     {% include 'includes/top_banner.html' %}
+
     <section class="section-content">
         <div class="register contact-us">
             <div class="container">
@@ -96,11 +98,5 @@ CONTACT US
         </div>
     </section>
 
-    <script src="https://www.google.com/recaptcha/enterprise.js?render={{ recaptcha_key }}" async defer></script>
-    <script>
-        grecaptcha.enterprise.ready(function () {
-            grecaptcha.enterprise.execute('{{ recaptcha_key }}', {action: 'contact'}).then(function (token) {
-            });
-        });
-    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 {% endblock %}
