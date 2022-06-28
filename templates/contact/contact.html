@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 
 
-
 *******************
 CONTACT US
 *******************
@@ -37,7 +36,8 @@ CONTACT US
                             </div>
                             <div class="g-recaptcha" data-sitekey="{{ recaptcha_key }}" data-callback="Verify"></div>
 
-                            <input type="submit" value="Submit">
+
+                            <input type="submit" class="btn btn-primary rounded-pill btn-sm px-5" disabled id="form-submit">
 
                         </form>
                     </div>
@@ -99,4 +99,9 @@ CONTACT US
     </section>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function Verify(e) {
+            document.getElementById('form-submit').removeAttribute('disabled');
+        }
+    </script>
 {% endblock %}
