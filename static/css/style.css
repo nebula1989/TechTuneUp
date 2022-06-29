@@ -76,6 +76,10 @@
 
 }
 
+#form-submit {
+    background-color: #7f8693;
+}
+
 html {
     overflow-x: hidden;
 }
