@@ -5452,8 +5452,9 @@ hr {
 
 @media (max-width: 991px) {
     .form-contact {
-        text-align: center;
+        text-align: match-parent;
         margin-top: 50px;
+        margin-left: 10%;
     }
 
     .comments-form.light.down {
