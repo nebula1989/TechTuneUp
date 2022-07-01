@@ -6,15 +6,18 @@
 {# Display django.contrib.messages as Bootstrap alerts #}
 {% bootstrap_messages %}
 
+{% load static %}
+
 <!-- HEAD -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
+<meta property="og:image" content="{% static 'img/navbar-logo-trans-white.png' %}" />
 
 
 {# TechTuneUp template files #}
-{% load static %}
+
 <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
 <link href="{% static 'css/delicons.css' %}" rel="stylesheet">
