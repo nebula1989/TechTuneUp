@@ -115,7 +115,6 @@ EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
 
 handler404 = views.error_404
 
-
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
     'https://www.techtuneup.org',
@@ -132,3 +131,5 @@ CORS_ALLOW_HEADERS = [
     "x-csrftoken",
     "x-requested-with",
 ]
+
+SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
