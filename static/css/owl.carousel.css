@@ -95,17 +95,23 @@
 	background-repeat: no-repeat;
 }
 .item1{
-  background-image: url("../img/topbanner01.jpg");
+  background-image: url("../img/web-dev-service.jpg");
   height: 100%;
 }
 .item2{
-  background-image: url("../img/top-banner-webdev.jpg");
+  background-image: url("../img/topbanner01.jpg");
   height: 100%;
 }
 .item3{
-  background-image: url("../img/topbanner02.jpg");
+  background-image: url("../img/top-banner-webdev.jpg");
   height: 100%;
 }
+
+.item4{
+  background-image: url("../img/computers.jpg");
+  height: 100%;
+}
+
 .vc-parent {
 	position: relative;
     width: 100%;
