@@ -28,17 +28,28 @@ class SendContactFormTests(TestCase):
         from selenium.webdriver.support import expected_conditions as EC
         from selenium.common.exceptions import NoSuchElementException
 
+        localhost_url = "http://127.0.0.1:8000/contact/"
+        live_domain_url = "https://www.techtuneup.org/contact/"
         driver = webdriver.Firefox()
-        driver.get("http://127.0.0.1:8000/contact/")
+        driver.get(live_domain_url)
         self.assertIn("Contact", driver.title)
 
-        email_field = driver.find_element(By.ID, 'id_email')
-        email_field.send_keys('django-tester@mail.com')
-        name_field = driver.find_element(By.ID, 'id_name')
-        name_field.send_keys('Django Tester')
-        message_field = driver.find_element(By.ID, 'id_message')
-        message_field.send_keys('This is an automated test, testing the emailer.')
-        submit_btn = driver.find_element(By.XPATH, "//input[@type='submit']")
-        submit_btn.send_keys(Keys.RETURN)
+        try:
+            email_field = driver.find_element(By.ID, 'emailFormInput')
+            email_field.send_keys('django-tester@mail.com')
+            name_field = driver.find_element(By.ID, 'nameFormInput')
+            name_field.send_keys('Django Tester')
+            message_field = driver.find_element(By.ID, 'messageFormInput')
+            message_field.send_keys('This is an automated test, testing the emailer.')
+            # try to solve the captcha
+            # captcha_checkbox = driver.find_element(By.XPATH, '//span[@class="recaptcha-checkbox-border"]')
+            # captcha_checkbox.click()
 
-        driver.close()
+            submit_btn = driver.find_element(By.XPATH, "//input[@id='form-submit']")
+            driver.execute_script("arguments[0]. removeAttribute('disabled');", submit_btn)
+
+            submit_btn.send_keys(Keys.RETURN)
+        except NoSuchElementException:
+            print("Can't find elements.")
+            driver.close()
+
