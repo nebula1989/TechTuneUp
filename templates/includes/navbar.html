@@ -23,16 +23,16 @@ NAV MENU
                         <li class="menu-item menu-item-has-children">
                             <a href="{% url 'all_services' %}">Services</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="{% url 'repair_services' %}">Repair Services</a></li>
-                                <li class="menu-item"><a href="{% url 'app_dev' %}">Web and Mobile Application
+                                <li class="menu-item"><a href="{% url 'repair_services' %}" style="text-transform: lowercase;">Repair Services</a></li>
+                                <li class="menu-item"><a href="{% url 'app_dev' %}" style="text-transform: lowercase;">Web and Mobile Application
                                     Development</a></li>
-                                <li class="menu-item"><a href="{% url 'tech_services' %}"> Other Tech Services</a></li>
+                                <li class="menu-item"><a href="{% url 'tech_services' %}" style="text-transform: lowercase;"> Other Tech Services</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="{% url 'about' %}">About</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="{% url 'faq' %}">Faq</a></li>
+                                <li class="menu-item"><a href="{% url 'faq' %}" style="text-transform: lowercase;">Faq</a></li>
                             </ul>
                         </li>
                         {% comment %}
@@ -59,7 +59,7 @@ NAV MENU MOBILE
     <div class="container">
         <div class="row">
             <div class="col-md-3 no-padding">
-                <a href="{% url 'index' %}"><img src="{% static 'img/navbar-logo-trans-black.png' %}" alt="logo"
+                <a href="{% url 'index' %}"><img id="nav-bar-mobile-logo-img" src="{% static 'img/LOGO_V1_DARK_TRANSPARENT.png' %}" alt="logo"
                                                  class="logo-menu"></a>
             </div>
             <div class="col-md-9 no-padding">
@@ -74,10 +74,10 @@ NAV MENU MOBILE
                         <li class="menu-item menu-item-has-children">
                             <a>Services</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="{% url 'repair_services' %}">Repair</a></li>
-                                <li class="menu-item"><a href="{% url 'app_dev' %}">Web and Mobile Application
+                                <li class="menu-item"><a href="{% url 'repair_services' %}" style="text-transform: lowercase;">Repair</a></li>
+                                <li class="menu-item"><a href="{% url 'app_dev' %}" style="text-transform: lowercase;">Web and Mobile Application
                                     Development</a></li>
-                                <li class="menu-item"><a href="{% url 'tech_services' %}"> Other Tech Services</a></li>
+                                <li class="menu-item"><a href="{% url 'tech_services' %}" style="text-transform: lowercase;"> Other Tech Services</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-last"><a href="{% url 'about' %}">About Us</a></li>

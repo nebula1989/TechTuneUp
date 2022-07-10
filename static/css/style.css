@@ -85,6 +85,11 @@
     height: auto;
 }
 
+#nav-bar-mobile-logo-img {
+    width: 30%;
+    height: auto;
+}
+
 html {
     overflow-x: hidden;
 }
