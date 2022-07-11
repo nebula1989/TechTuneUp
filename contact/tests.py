@@ -31,14 +31,14 @@ class SendContactFormTests(TestCase):
         localhost_url = "http://127.0.0.1:8000/contact/"
         live_domain_url = "https://www.techtuneup.org/contact/"
         driver = webdriver.Firefox()
-        driver.get(live_domain_url)
+        driver.get(localhost_url)
         self.assertIn("Contact", driver.title)
 
         try:
             email_field = driver.find_element(By.ID, 'emailFormInput')
             email_field.send_keys('django-tester@mail.com')
             name_field = driver.find_element(By.ID, 'nameFormInput')
-            name_field.send_keys('Django Tester')
+            name_field.send_keys('CrytoThots')
             message_field = driver.find_element(By.ID, 'messageFormInput')
             message_field.send_keys('This is an automated test, testing the emailer.')
             # try to solve the captcha
