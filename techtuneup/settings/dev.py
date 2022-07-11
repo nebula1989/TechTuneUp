@@ -34,3 +34,5 @@ TIME_ZONE = 'EST'
 
 # use the testing recaptcha key from google
 RECAPTCHA_KEY = '6Lfm6aIgAAAAAG61Bl-U4zr0I2XWKwQ_7JS__QOJ'
+
+DOMAIN = 'http://127.0.0.1:8000/'

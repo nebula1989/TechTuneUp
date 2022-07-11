@@ -38,8 +38,7 @@ class ContactFormModel(TestCase):
 
 class SeleniumWebAutomation(TestCase):
     driver = webdriver.Firefox()
-    live_domain = "https://www.techtuneup.org/"
-    localhost = "http://127.0.0.1:8000/"
+    domain = settings.DOMAIN
 
     def test_contact_form(self):
         self.driver.get(self.localhost + 'contact/')
@@ -54,7 +53,7 @@ class SeleniumWebAutomation(TestCase):
     def test_duplicate_email(self):
         # this script will try to enter the same email 4 times
         for i in range(3):
-            self.driver.get(self.localhost + 'contact/')
+            self.driver.get(self.domain + 'contact/')
             self.assertIn("Contact", self.driver.title)
             try:
                 self.fill_in_contact_form('testing1@mail.com', 'George Clooney', 'Hi I am George')
