@@ -910,6 +910,22 @@ hr {
     }
 }
 
+@media (min-width: 600px) {
+    .menu-wrap.mobile {
+        display: none;
+        max-height: 50%;
+
+    }
+}
+
+@media (max-width: 700px) {
+    .menu-wrap.mobile {
+        display: none;
+        max-height: 50%;
+    }
+
+}
+
 @media (max-width: 767px) {
     .nav-menu {
         padding: 0;

@@ -69,12 +69,8 @@ class SeleniumWebAutomation(TestCase):
         name_field.send_keys(name)
         message_field = self.driver.find_element(By.ID, 'messageFormInput')
         message_field.send_keys(message)
-        # try to solve the captcha
-        # captcha_checkbox = driver.find_element(By.XPATH, '//span[@class="recaptcha-checkbox-border"]')
-        # captcha_checkbox.click()
-
+        time.sleep(10)
         submit_btn = self.driver.find_element(By.XPATH, "//input[@id='form-submit']")
-        self.driver.execute_script("arguments[0]. removeAttribute('disabled');", submit_btn)
         submit_btn.send_keys(Keys.RETURN)
 
     def no_element_found(self):
