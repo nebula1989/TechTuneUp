@@ -34,11 +34,11 @@ CONTACT US
                                 <textarea name="message" type="text" class="form-control" id="messageFormInput"
                                           placeholder="Type a brief message..."> </textarea>
                             </div>
-                            <div class="g-recaptcha" data-sitekey="{{ recaptcha_key }}" data-callback="Verify"></div>
 
-
-                            <input type="submit" id="form-submit" class="btn btn-primary rounded-pill btn-sm px-5"
-                                   disabled value="Send Mail">
+                            <div class="g-recaptcha btn btn-primary rounded-pill btn-sm px-5"
+                                 data-sitekey={{ recaptcha_key }}
+                                         data-action="SUBMIT"></div>
+                            <input type="submit" value="Submit" id="submit">
 
                         </form>
                     </div>
