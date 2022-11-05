@@ -30,11 +30,12 @@ def contact_view(request):
                 email_message = form.cleaned_data['message']
                 send_mail(email_subject, email_message, settings.CONTACT_EMAIL, settings.ADMIN_EMAIL)
                 messages.success(request, 'Contact Email Sent Successfully!')
+                return redirect('index')
+
             except google_exceptions.InvalidArgument:
                 messages.error(request, "Please check the captcha.")
                 return redirect('contact')
 
-            return redirect('index')
         else:
             messages.error(request, "Oops something went wrong")
     form = ContactForm()
