@@ -32,7 +32,7 @@ def contact_view(request):
                 messages.success(request, 'Contact Email Sent Successfully!')
             except google_exceptions.InvalidArgument:
                 messages.error(request, "Please check the captcha.")
-                redirect('contact')
+                return redirect('contact')
 
             return redirect('index')
         else:
