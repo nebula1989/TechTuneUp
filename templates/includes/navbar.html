@@ -9,7 +9,7 @@ NAV MENU
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a href="{% url 'index' %}"><img id="navbar-logo" src="{% static 'img/icon_logo.png' %}" alt="logo"></a>
+                <a href="{% url 'index' %}"><img id="navbar-logo" src="{% static 'img/icon_logo.png' %}" alt=""></a>
             </div>
             <div class="col-md-9 no-padding">
                 <nav class="nav-menu">
@@ -39,15 +39,6 @@ NAV MENU
                                                          style="text-transform: lowercase;">Faq</a></li>
                             </ul>
                         </li>
-                        {% comment %}
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">My Account</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="{% url 'register' %}">Register</a></li>
-                                <li class="menu-item"><a href="{% url 'login' %}">Login</a></li>
-                            </ul>
-                        </li>
-                       {% endcomment %}
                     </ul>
                 </nav>
             </div>
@@ -64,7 +55,7 @@ NAV MENU MOBILE
         <div class="row">
             <div class="col-md-3 no-padding">
                 <a href="{% url 'index' %}"><img id="nav-bar-mobile-logo-img" src="{% static 'img/icon_logo.png' %}"
-                                                 class="logo-menu" alt="logo">
+                                                 class="logo-menu" alt="">
                 </a>
             </div>
             <div class="col-md-9 no-padding">

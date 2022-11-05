@@ -776,6 +776,7 @@ hr {
 #nav-toggle {
     cursor: pointer;
     padding: 17px 37px 22px 7px;
+
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
