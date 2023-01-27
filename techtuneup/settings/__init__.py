@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 file_path = Path(__file__).absolute().parent
-CONFIG_FILE = file_path / "config.json"
+CONFIG_FILE = "/etc/techtuneup_config.json"
 try:
     with open(CONFIG_FILE) as config_file:
         config = json.load(config_file)
