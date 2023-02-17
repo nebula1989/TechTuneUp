@@ -1,12 +1,5 @@
 import time
 
-# selenium
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException
 
 from django.core.mail import send_mail
 from django.test import TestCase
@@ -37,6 +30,14 @@ class ContactFormModel(TestCase):
 
 
 class SeleniumWebAutomation(TestCase):
+    # selenium
+    from selenium import webdriver
+    from selenium.webdriver.common.keys import Keys
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
+    from selenium.common.exceptions import NoSuchElementException
+
     driver = webdriver.Firefox()
     domain = settings.DOMAIN
 
@@ -47,7 +48,7 @@ class SeleniumWebAutomation(TestCase):
         try:
             self.fill_in_contact_form('testing1@mail.com', 'George Clooney', 'Hi I am George')
 
-        except NoSuchElementException:
+        except self.NoSuchElementException:
             self.no_element_found()
 
     def test_duplicate_email(self):
@@ -59,19 +60,19 @@ class SeleniumWebAutomation(TestCase):
                 self.fill_in_contact_form('testing1@mail.com', 'George Clooney', 'Hi I am George')
                 time.sleep(5)
 
-            except NoSuchElementException:
+            except self.NoSuchElementException:
                 self.no_element_found()
 
     def fill_in_contact_form(self, email, name, message):
-        email_field = self.driver.find_element(By.ID, 'emailFormInput')
+        email_field = self.driver.find_element(self.By.ID, 'emailFormInput')
         email_field.send_keys(email)
-        name_field = self.driver.find_element(By.ID, 'nameFormInput')
+        name_field = self.driver.find_element(self.By.ID, 'nameFormInput')
         name_field.send_keys(name)
-        message_field = self.driver.find_element(By.ID, 'messageFormInput')
+        message_field = self.driver.find_element(self.By.ID, 'messageFormInput')
         message_field.send_keys(message)
         time.sleep(10)
-        submit_btn = self.driver.find_element(By.XPATH, "//input[@id='form-submit']")
-        submit_btn.send_keys(Keys.RETURN)
+        submit_btn = self.driver.find_element(self.By.XPATH, "//input[@id='form-submit']")
+        submit_btn.send_keys(self.Keys.RETURN)
 
     def no_element_found(self):
         print("Can't find elements.")
