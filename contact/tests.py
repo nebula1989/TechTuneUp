@@ -41,7 +41,7 @@ class SeleniumWebAutomation(TestCase):
     domain = settings.DOMAIN
 
     def test_contact_form(self):
-        self.driver.get(self.localhost + 'contact/')
+        self.driver.get(self.domain + 'contact/')
         self.assertIn("Contact", self.driver.title)
 
         try:

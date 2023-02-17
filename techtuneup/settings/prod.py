@@ -8,13 +8,11 @@ ALLOWED_HOSTS = ['www.techtuneup.org', 'techtuneup.org']
 
 
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'OPTIONS': {
-            'service': '',
-            'passfile': '',
-        },
-    }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    },
 }
 
 
