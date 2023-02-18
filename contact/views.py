@@ -59,9 +59,7 @@ def error_view(request):
     return render(request, 'contact/error.html')
 
 
-def create_assessment(
-        project_id: str, recaptcha_site_key: str, token: str, recaptcha_action: str
-) -> Assessment:
+def create_assessment(project_id: str, recaptcha_site_key: str, token: str, recaptcha_action: str) -> Assessment:
     """Create an assessment to analyze the risk of a UI action.
     Args:
         project_id: GCloud Project ID
