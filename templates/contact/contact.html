@@ -34,7 +34,7 @@ CONTACT US
                                 <textarea name="message" type="text" class="form-control" id="messageFormInput"
                                           placeholder="Type a brief message..."> </textarea>
                             </div>
-
+                            <p>{{ recaptcha_key }}</p>
                             <div class="g-recaptcha btn btn-primary rounded-pill btn-sm px-5"
                                  data-sitekey={{ recaptcha_key }}
                                          data-action="SUBMIT"></div>
@@ -106,9 +106,6 @@ CONTACT US
             </div>
         </div>
     </section>
-
-
-
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
