@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-<script src="https://www.google.com/recaptcha/enterprise.js?render={{ recaptcha_key }}"></script>
 
 *******************
 CONTACT US
@@ -34,10 +33,7 @@ CONTACT US
                                 <textarea name="message" type="text" class="form-control" id="messageFormInput"
                                           placeholder="Type a brief message..."> </textarea>
                             </div>
-                            <div class="g-recaptcha btn btn-primary rounded-pill btn-sm px-5"
-                                 data-sitekey="{{ recaptcha_key }}"
-                                 data-action="SUBMIT">
-                            </div>
+
                             <input type="submit" value="Submit" id="submit">
 
                         </form>
