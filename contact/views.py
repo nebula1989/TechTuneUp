@@ -16,7 +16,7 @@ from .forms import ContactForm
 
 def contact_view(request):
     project_id = 'recaptcha-354614'
-    recaptcha_site_key = '6LcoP6EgAAAAAG0zexEA83UDaxn-KzvoFa9mDZFJ'
+    recaptcha_site_key = RECAPTCHA_KEY
     recaptcha_action = 'SUBMIT'
 
     if request.method == 'POST':
@@ -38,6 +38,8 @@ def contact_view(request):
 
         else:
             messages.error(request, "Oops something went wrong")
+            return redirect('index')
+
     form = ContactForm()
     context = {
         "title": "Contact",

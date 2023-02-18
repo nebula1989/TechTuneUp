@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+<script src="https://www.google.com/recaptcha/enterprise.js?render={{ recaptcha_key }}"></script>
 
 *******************
 CONTACT US
@@ -34,10 +34,10 @@ CONTACT US
                                 <textarea name="message" type="text" class="form-control" id="messageFormInput"
                                           placeholder="Type a brief message..."> </textarea>
                             </div>
-                            <p>{{ recaptcha_key }}</p>
                             <div class="g-recaptcha btn btn-primary rounded-pill btn-sm px-5"
-                                 data-sitekey={{ recaptcha_key }}
-                                         data-action="SUBMIT"></div>
+                                 data-sitekey="{{ recaptcha_key }}"
+                                 data-action="SUBMIT">
+                            </div>
                             <input type="submit" value="Submit" id="submit">
 
                         </form>
@@ -107,10 +107,5 @@ CONTACT US
         </div>
     </section>
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-        function Verify(e) {
-            document.getElementById('form-submit').removeAttribute('disabled');
-        }
-    </script>
+
 {% endblock %}
