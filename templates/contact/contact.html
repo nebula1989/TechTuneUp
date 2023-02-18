@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+
+
 *******************
 CONTACT US
 *******************
@@ -33,8 +35,10 @@ CONTACT US
                                 <textarea name="message" type="text" class="form-control" id="messageFormInput"
                                           placeholder="Type a brief message..."> </textarea>
                             </div>
+                            <div class="g-recaptcha" data-sitekey="{{ recaptcha_key }}" data-action="SUBMIT"></div>
+                            <br/>
+                            <input type="submit" value="Submit">
 
-                            <input type="submit" value="Submit" id="submit">
 
                         </form>
                     </div>
@@ -103,5 +107,13 @@ CONTACT US
         </div>
     </section>
 
+<script src="https://www.google.com/recaptcha/enterprise.js?render={{ recaptcha_key }}"></script>
+<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('{{ recaptcha_key }}', {action: 'submit'}).then(function(token) {
+        console.log(token)
+    });
+});
+</script>
 
 {% endblock %}

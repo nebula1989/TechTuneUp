@@ -15,16 +15,16 @@ from .forms import ContactForm
 
 
 def contact_view(request):
-    #project_id = 'recaptcha-354614'
-    #recaptcha_site_key = RECAPTCHA_KEY
-    #recaptcha_action = 'SUBMIT'
+    project_id = 'recaptcha-354614'
+    recaptcha_site_key = RECAPTCHA_KEY
+    recaptcha_action = 'SUBMIT'
 
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            #token = request.POST['g-recaptcha-response']
+            token = request.POST['g-recaptcha-response']
             try:
-                #create_assessment(project_id, recaptcha_site_key, token, recaptcha_action)
+                create_assessment(project_id, recaptcha_site_key, token, recaptcha_action)
                 form.save()
                 email_subject = f'New contact {form.cleaned_data["name"]}: {form.cleaned_data["email"]}'
                 email_message = form.cleaned_data['message']
@@ -45,7 +45,7 @@ def contact_view(request):
         "title": "Contact",
         "top_banner_name": "Contact",
         'form': form,
-        #"recaptcha_key": RECAPTCHA_KEY,
+        "recaptcha_key": RECAPTCHA_KEY,
     }
 
     return render(request, 'contact/contact.html', context)
