@@ -16,7 +16,7 @@ from .forms import ContactForm
 
 def contact_view(request):
     project_id = 'recaptcha-354614'
-    recaptcha_site_key = '6Lfyj1QiAAAAAGJ8-iFk22fmSJu8p4gmAdhKBE5E'
+    recaptcha_site_key = '6LcoP6EgAAAAAG0zexEA83UDaxn-KzvoFa9mDZFJ'
     recaptcha_action = 'SUBMIT'
 
     if request.method == 'POST':
