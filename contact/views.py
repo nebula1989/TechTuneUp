@@ -73,11 +73,11 @@ def create_assessment(
     credentials = service_account.Credentials.from_service_account_file(filename)
     """
 
-<<<<<<< HEAD
+
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/etc/google_recaptcha_credential.json"
-=======
+
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/etc/google_cred.json"
->>>>>>> fix_recaptcha
+
     client = recaptchaenterprise_v1.RecaptchaEnterpriseServiceClient()
 
     # Set the properties of the event to be tracked.
