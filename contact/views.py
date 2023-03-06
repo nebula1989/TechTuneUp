@@ -1,4 +1,5 @@
 import os
+from pprint import pprint
 
 # Google
 from google.cloud import recaptchaenterprise_v1
@@ -38,6 +39,7 @@ def contact_view(request):
 
         else:
             messages.error(request, "Oops something went wrong")
+
     form = ContactForm()
     context = {
         "title": "Contact",
@@ -71,7 +73,7 @@ def create_assessment(
     credentials = service_account.Credentials.from_service_account_file(filename)
     """
 
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/bwalters89/techtuneup/techtuneup/settings/google_cred.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/etc/google_cred.json"
     client = recaptchaenterprise_v1.RecaptchaEnterpriseServiceClient()
 
     # Set the properties of the event to be tracked.
