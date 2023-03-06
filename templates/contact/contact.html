@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 
+
 *******************
 CONTACT US
 *******************
@@ -36,11 +37,14 @@ CONTACT US
                             </div>
 
                             <div class="g-recaptcha btn btn-primary rounded-pill btn-sm px-5"
-                                 data-sitekey={{ recaptcha_key }}
-                                         data-action="SUBMIT"></div>
+                                 data-action="SUBMIT"
+                                 data-sitekey={{ recaptcha_key }}>
+
+                            </div>
                             <input type="submit" value="Submit" id="submit">
 
                         </form>
+
                     </div>
 
                     <div class="col-md-4">
@@ -110,10 +114,7 @@ CONTACT US
 
 
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-        function Verify(e) {
-            document.getElementById('form-submit').removeAttribute('disabled');
-        }
-    </script>
+
+
+
 {% endblock %}

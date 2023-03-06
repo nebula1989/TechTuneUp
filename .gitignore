@@ -11,6 +11,8 @@ techtuneup/settings/.my_pgpass
 techtuneup/settings/secrets.py
 techtuneup/settings/google_cred.json
 
+contact/migrations
+
 # selenium
 geckodriver.log
 
