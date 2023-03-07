@@ -73,9 +73,6 @@ def create_assessment(
     credentials = service_account.Credentials.from_service_account_file(filename)
     """
 
-
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/etc/google_recaptcha_credential.json"
-
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/etc/google_cred.json"
 
     client = recaptchaenterprise_v1.RecaptchaEnterpriseServiceClient()
