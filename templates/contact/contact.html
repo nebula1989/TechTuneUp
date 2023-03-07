@@ -113,7 +113,14 @@ CONTACT US
 
 
 
-
+<script src="https://www.google.com/recaptcha/enterprise.js?render={{ recaptcha_key }}"></script>
+<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute({{ recaptcha_key }}, {action: 'SUBMIT'}).then(function(token) {
+       console.log(token)
+    });
+});
+</script>
 
 
 
