@@ -37,7 +37,7 @@ class ContactFormModel(TestCase):
 
 
 class SeleniumWebAutomation(TestCase):
-    driver = webdriver.Firefox()
+    driver = webdriver.Firefox(executable_path='/home/bwalters/geckodriver-v0.30.0-linux64/geckodriver')
     domain = settings.DOMAIN
 
     def test_contact_form(self):
@@ -62,7 +62,7 @@ class SeleniumWebAutomation(TestCase):
             except NoSuchElementException:
                 self.no_element_found()
 
-    def fill_in_contact_form(self, email, name, message):
+    def fill_in_contact_form(self, email="localdevtest@mail.com", name="Local Dev", message="Local dev test message"):
         email_field = self.driver.find_element(By.ID, 'emailFormInput')
         email_field.send_keys(email)
         name_field = self.driver.find_element(By.ID, 'nameFormInput')
