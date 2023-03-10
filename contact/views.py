@@ -1,6 +1,13 @@
 import os
 from pprint import pprint
 
+import logging
+
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
+
+import sys
+
 # Google
 from google.cloud import recaptchaenterprise_v1
 from google.cloud.recaptchaenterprise_v1 import Assessment
@@ -24,6 +31,7 @@ def contact_view(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             token = request.POST['g-recaptcha-response']
+            logger.info(token)
             create_assessment(project_id, recaptcha_site_key, token, recaptcha_action)
             try:
                 form.save()
@@ -73,54 +81,58 @@ def create_assessment(
     credentials = service_account.Credentials.from_service_account_file(filename)
     """
 
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/etc/google_cred.json"
+    with open("logs/techtuneup.log", "a") as o:
 
-    client = recaptchaenterprise_v1.RecaptchaEnterpriseServiceClient()
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/etc/google_cred.json"
 
-    # Set the properties of the event to be tracked.
-    event = recaptchaenterprise_v1.Event()
-    event.site_key = recaptcha_site_key
-    event.token = token
+        client = recaptchaenterprise_v1.RecaptchaEnterpriseServiceClient()
 
-    assessment = recaptchaenterprise_v1.Assessment()
-    assessment.event = event
+        # Set the properties of the event to be tracked.
+        event = recaptchaenterprise_v1.Event()
+        event.site_key = recaptcha_site_key
+        event.token = token
 
-    project_name = f"projects/{project_id}"
+        assessment = recaptchaenterprise_v1.Assessment()
+        assessment.event = event
 
-    # Build the assessment request.
-    request = recaptchaenterprise_v1.CreateAssessmentRequest()
-    request.assessment = assessment
-    request.parent = project_name
+        project_name = f"projects/{project_id}"
 
-    response = client.create_assessment(request)
+        # Build the assessment request.
+        request = recaptchaenterprise_v1.CreateAssessmentRequest()
+        request.assessment = assessment
+        request.parent = project_name
 
-    # Check if the token is valid.
-    if not response.token_properties.valid:
-        print(
-            "The CreateAssessment call failed because the token was "
-            + "invalid for for the following reasons: "
-            + str(response.token_properties.invalid_reason)
-        )
-        return
+        response = client.create_assessment(request)
 
-    # Check if the expected action was executed.
-    if response.token_properties.action != recaptcha_action:
-        print(
-            "The action attribute in your reCAPTCHA tag does"
-            + "not match the action you are expecting to score"
-        )
-        return
-    else:
-        # Get the risk score and the reason(s)
-        # For more information on interpreting the assessment,
-        # see: https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment
-        for reason in response.risk_analysis.reasons:
-            print(reason)
-        print(
-            "The reCAPTCHA score for this token is: "
-            + str(response.risk_analysis.score)
-        )
-        # Get the assessment name (id). Use this to annotate the assessment.
-        assessment_name = client.parse_assessment_path(response.name).get("assessment")
-        print(f"Assessment name: {assessment_name}")
-    return response
+        # Check if the token is valid.
+        if not response.token_properties.valid:
+            o.write(
+                "The CreateAssessment call failed because the token was "
+                + "invalid for for the following reasons: "
+                + str(response.token_properties.invalid_reason)
+            )
+            return
+
+        # Check if the expected action was executed.
+        if response.token_properties.action != recaptcha_action:
+
+            o.write(
+                "The action attribute in your reCAPTCHA tag does"
+                + "not match the action you are expecting to score"
+            )
+            return
+        else:
+            # Get the risk score and the reason(s)
+            # For more information on interpreting the assessment,
+            # see: https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment
+            for reason in response.risk_analysis.reasons:
+                o.write(reason)
+
+            o.write(
+                "The reCAPTCHA score for this token is: "
+                + str(response.risk_analysis.score)
+            )
+            # Get the assessment name (id). Use this to annotate the assessment.
+            assessment_name = client.parse_assessment_path(response.name).get("assessment")
+            o.write(f"Assessment name: {assessment_name}")
+        return response

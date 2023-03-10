@@ -2,7 +2,10 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'index.html')
+    context = {
+        "top_banner_name": "Tech Tune Up Home",
+    }
+    return render(request, 'index.html', context)
 
 
 def about(request):
