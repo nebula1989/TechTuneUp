@@ -9,7 +9,7 @@ NAV MENU
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a href="{% url 'index' %}"><img id="navbar-logo" src="{% static 'img/icon_logo.png' %}" alt=""></a>
+                <a href="{% url 'index' %}"><img id="navbar-logo" src="{% static 'img/icon_logo.png' %}" alt="Tech Tune Up Logo"></a>
             </div>
             <div class="col-md-9 no-padding">
                 <nav class="nav-menu">
@@ -20,7 +20,7 @@ NAV MENU
                     </button>
                     <ul class="main-menu">
                         <li class="menu-item menu-item-has-children">
-                            <a href="{% url 'all_services' %}">Services</a>
+                            <a href="{% url 'services' %}">Services</a>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="{% url 'repair_services' %}"
                                                          style="text-transform: lowercase;">Repair Services</a></li>

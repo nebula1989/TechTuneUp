@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block meta_content %}Computer Repair, Mobile Repair, Website Development{% endblock %}
+
 {% block title %}TechTuneUp - Computer and Mobile Repair{% endblock %}
 
 {% block content %}
@@ -16,9 +18,10 @@
                         <div class="container">
                             <div class="banner-wrap">
                                 <h1 class="heading">Tech Tune Up</h1>
-                                <h2 class="subheading left">Repair, Web Development, and other Tech Services.</h2>
+                                <h2 class="subheading left">Computer Repair, iPhone Repair, and other Technology
+                                    Services.</h2>
                             </div>
-                            <a href="{% url 'all_services' %}" class="btn btn-default-alt-yellow">Our Services</a>
+                            <a href="{% url 'services' %}" class="btn btn-default-alt-yellow">Our Services</a>
                         </div>
                     </div>
                 </div>
@@ -30,7 +33,7 @@
                     <div class="top-banner modern">
                         <div class="container">
                             <div class="banner-wrap">
-                                <h1 class="heading">PC & Mobile Repair and Upgrades</h1>
+                                <h2 class="heading">PC & Mobile Repair and Upgrades</h2>
                                 <h3 class="subheading left">We can repair and replace broken components and improve
                                     performance.</h3>
                             </div>
@@ -46,11 +49,10 @@
                     <div class="top-banner modern">
                         <div class="container">
                             <div class="banner-wrap">
-                                <h1 class="heading">Web & Mobile Development</h1>
-                                <h3 class="subheading left">We create custom web and mobile applications.</h3>
+                                <h2 class="heading">Website Development</h2>
+                                <h3 class="subheading left">.</h3>
                             </div>
-                            <a href="{% url 'app_dev' %}" class="btn btn-default-alt-yellow">Application Development
-                                Services</a>
+                            <a href="{% url 'app_dev' %}" class="btn btn-default-alt-yellow">More About Website Services</a>
                         </div>
                     </div>
                 </div>
@@ -75,53 +77,19 @@
             </div>
         </div>
     </div>
-    <!-- 
-    *******************
-        SUPPORT BAR   
-    *******************
-    -->
-    <div class="support-bar home">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9 col-sm-9 col-xs-12">
-                    <p>Support 7 days a week.</p>
-                    <div class="title">Do you need a support or repair for your technology?</div>
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-12">
-                    <button class="btn btn-block btn-default-alt-white"><a href="{% url 'contact' %}">Contact Us</a>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
 
+
+    <div class="text-center" id="homepage-description">
+        <h1 class="section-heading">Tech Tune Up</h1>
+        <p class="section-subheading">Tech Tune Up provides a wide variety of technology services in Raleigh, Rolesville, and
+            Wake Forest. We offer computer repair, iphone & android repair, website development, and more.</p>
+    </div>
+{% comment %}
     {% include 'includes/repair-services.html' %}
-    {% include 'includes/development-services.html' %}
+    {% include 'includes/website-services.html' %}
     {% include 'includes/technology-services.html' %}
     {% include 'includes/features.html' %}
     {% include 'includes/included-services.html' %}
-
-    <!-- 
-    *******************
-      COLUMN FOOTER
-    ******************* 
-    -->
-    <div class="column-support-container">
-        <div class="container">
-            <div class="column-support-inner">
-                <div class="column-support-content">
-                    <div class="column-support-txt">
-                        <div class="column-support-title">Have Any Questions?</div>
-                        <div class="column-support-subtitle">Feel free to reach out if you are interested in our
-                            services
-                        </div>
-                    </div>
-                    <div class="column-support-button">
-                        <a href="{% url 'contact' %}" class=" btn">Contact Us</a>`
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+{% endcomment %}
 
 {% endblock %}

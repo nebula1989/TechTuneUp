@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 def index(request):
     context = {
-        "top_banner_name": "Tech Tune Up Home",
+        "top_banner_name": "Home",
     }
     return render(request, 'index.html', context)
 
@@ -15,11 +15,11 @@ def about(request):
     return render(request, 'about.html', context)
 
 
-def all_services(request):
+def services(request):
     context = {
-        "top_banner_name": "All Services",
+        "top_banner_name": "Services",
     }
-    return render(request, 'all-services.html', context)
+    return render(request, 'services.html', context)
 
 
 def repair_services(request):
@@ -69,13 +69,6 @@ def gaming_repair(request):
         "top_banner_name": "Gaming Console Repair",
     }
     return render(request, 'game-console-repair.html', context)
-
-
-def pricing_tables(request):
-    context = {
-        "top_banner_name": "Prices",
-    }
-    return render(request, 'pricing-tables.html', context)
 
 
 def team(request):
