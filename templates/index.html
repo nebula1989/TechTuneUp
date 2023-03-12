@@ -37,7 +37,8 @@
                                 <h3 class="subheading left">We can repair and replace broken components and improve
                                     performance.</h3>
                             </div>
-                            <a href="{% url 'repair_services' %}" class="btn btn-default-alt-yellow">Repair Services</a>
+                            <a href="{% url 'services' %}" class="btn btn-default-alt-yellow">Our Services</a>
+
                         </div>
                     </div>
                 </div>
@@ -50,9 +51,10 @@
                         <div class="container">
                             <div class="banner-wrap">
                                 <h2 class="heading">Website Development</h2>
-                                <h3 class="subheading left">.</h3>
+                                <h3 class="subheading left">Creating custom websites using the latest technology.</h3>
                             </div>
-                            <a href="{% url 'app_dev' %}" class="btn btn-default-alt-yellow">More About Website Services</a>
+                            <a href="{% url 'services' %}" class="btn btn-default-alt-yellow">Our Services</a>
+
                         </div>
                     </div>
                 </div>
@@ -69,8 +71,8 @@
                                     technology needed to support a business.
                                     Plus, as we are an official Lenovo re-seller, we can get you great deals.</h3>
                             </div>
-                            <a href="{% url 'tech_services' %}" class="btn btn-default-alt-yellow">Other Tech
-                                Services</a>
+                            <a href="{% url 'services' %}" class="btn btn-default-alt-yellow">Our Services</a>
+
                         </div>
                     </div>
                 </div>
@@ -80,16 +82,13 @@
 
 
     <div class="text-center" id="homepage-description">
-        <h1 class="section-heading">Tech Tune Up</h1>
-        <p class="section-subheading">Tech Tune Up provides a wide variety of technology services in Raleigh, Rolesville, and
-            Wake Forest. We offer computer repair, iphone & android repair, website development, and more.</p>
+        <h1 class="h1">Tech Tune Up</h1>
+        <h3 class="h3" style="padding: 5%">Tech Tune Up provides a wide variety of technology services in Raleigh,
+            Rolesville, and
+            Wake Forest. We offer computer repair, iphone & android repair, website development, and more.</h3>
     </div>
-{% comment %}
-    {% include 'includes/repair-services.html' %}
-    {% include 'includes/website-services.html' %}
-    {% include 'includes/technology-services.html' %}
+
     {% include 'includes/features.html' %}
-    {% include 'includes/included-services.html' %}
-{% endcomment %}
+
 
 {% endblock %}

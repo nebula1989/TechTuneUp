@@ -1,16 +1,170 @@
 {% extends 'base.html' %}
+{% load static %}
+{% load custom_tags %}
+
 <!--
 ******************
   ALL SERVICES
 ******************
 -->
 {% block content %}
-    {% load static %}
 
     {% include 'includes/top-banner.html' %}
 
-    {% include 'includes/repair-services.html' %}
-    {% include 'includes/technology-services.html' %}
-    {% include 'includes/website-services.html' %}
+
+    <section class="section-content" id="services-section">
+        <div class="history-section">
+            <div class="container">
+                <div class="history-separate first">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="img-wrap">
+                                <img src="{% static 'img/laptop-repair-01.jpg' %}" alt="photo"
+                                     class="img img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="wrappper">
+                                <h4 class="title">
+                                    Computer Repair
+                                </h4>
+                                <div class="desc">
+                                    Whether you broke it, or it broke itself, we'll get you back up and running quickly.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="img-wrap">
+                                <img src="{% static 'img/all-services-repair-02.jpg' %}" alt="photo"
+                                     class="img img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="wrappper">
+                                <h4 class="title">
+                                    Smartphone Repair
+                                </h4>
+                                <div class="desc">
+                                    Apple, Samsung, and more.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-separate first">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="img-wrap">
+                                <img src="{% static 'img/all-services-repair-03.jpg' %}" alt="photo"
+                                     class="img img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="wrappper">
+                                <h4 class="title">
+                                    Tablet Repair
+                                </h4>
+                                <div class="desc">
+                                    iPads, Kindles, and more.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3">
+                            <div class="img-wrap">
+                                <img src="{% static 'img/nintendo-switch.jpg' %}" alt="gaming-system-repair"
+                                     class="img img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="wrappper">
+                                <h4 class="title">
+                                    Gaming Console Repair
+                                </h4>
+                                <div class="desc">
+                                    Nintendo, Playstation, XBOX.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="history-section" id="tech-services-section">
+            <div class="container">
+                <div class="history-separate first">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="img-wrap">
+                                <img src="{% static 'img/lenovo_reseller.png' %}" alt="photo"
+                                     class="img img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="wrappper">
+                                <h4 class="title">
+                                    Technology Supply
+                                </h4>
+                                <div class="desc">
+                                    Supplying small businesses with the technology they need to be successful.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3">
+                            <div class="img-wrap">
+                                <img src="{% static 'img/technology-cables.jpg' %}" alt="photo"
+                                     class="img img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="wrappper">
+                                <h4 class="title">
+                                    Setup and Installation
+                                </h4>
+                                <div class="desc">
+                                    Installing and configuring computers, printers, and other office equipment.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="history-section" id="website-dev-section">
+            <div class="container">
+                <div class="history-separate first">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="img-wrap">
+                                <img src="{% static 'img/web-dev-service.jpg' %}" alt="image of website under construction"
+                                     class="img img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="wrappper">
+                                <h4 class="title">
+                                    Website Development
+                                </h4>
+                                <div class="desc">
+                                    Creating custom websites, managing domains, and maintaining servers.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
 
 {% endblock %}
