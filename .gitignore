@@ -5,6 +5,7 @@
 __pycache__
 db.sqlite3
 media
+static/admin
 techtuneup/settings/config.json
 techtuneup/settings/.pg_service.conf
 techtuneup/settings/.my_pgpass
